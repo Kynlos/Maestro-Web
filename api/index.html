@@ -224,11 +224,16 @@
         </a>
         <a href="docs.html" class="px-3 py-1.5 rounded-lg bg-espresso-950 font-bold text-ochre shadow-xs flex items-center gap-1.5 border border-espresso-700">
           <span>⚡ REST API</span>
-          <span class="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-ochre/20 text-ochre-light font-bold">56</span>
+          <span class="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-ochre/20 text-ochre-light font-bold">69</span>
         </a>
       </div>
 
       <div class="flex items-center gap-3">
+        <!-- Discord Community Button -->
+        <a href="https://discord.gg/fESWJVReST" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#5865F2] hover:bg-[#4752C4] text-white text-xs font-bold transition-all shadow-xs">
+          <i class="fa-brands fa-discord"></i>
+          <span>Discord</span>
+        </a>
         <!-- Search -->
         <div class="relative hidden sm:block">
           <i class="fa fa-search absolute left-2.5 top-1/2 -translate-y-1/2 text-espresso-600 text-xs"></i>
@@ -257,7 +262,8 @@
         <a href="#grammar" class="nav-link">Grammar <span class="ml-1 text-espresso-600 font-mono text-[10px]">9</span></a>
         <a href="#vocab" class="nav-link">Vocabulary <span class="ml-1 text-espresso-600 font-mono text-[10px]">7</span></a>
         <a href="#deck" class="nav-link">Deck & SRS <span class="ml-1 text-espresso-600 font-mono text-[10px]">6</span></a>
-        <a href="#reading" class="nav-link">Reading <span class="ml-1 text-espresso-600 font-mono text-[10px]">3</span></a>
+        <a href="#course" class="nav-link text-ochre font-semibold">MIT OCW Course <span class="ml-1 text-ochre/80 font-mono text-[10px]">7</span></a>
+        <a href="#reading" class="nav-link">Reading & Culture <span class="ml-1 text-espresso-600 font-mono text-[10px]">9</span></a>
         <a href="#games" class="nav-link">Games <span class="ml-1 text-espresso-600 font-mono text-[10px]">13</span></a>
         <a href="#quiz" class="nav-link">Quizzes & CEFR <span class="ml-1 text-espresso-600 font-mono text-[10px]">8</span></a>
         <a href="#student" class="nav-link">Student <span class="ml-1 text-espresso-600 font-mono text-[10px]">13</span></a>
@@ -1328,15 +1334,270 @@
         </div>
       </section>
 
-      <!-- ─── READING ────────────────────────────────────────────── -->
+      <!-- ─── MIT OCW ITALIAN COURSE ──────────────────────────────── -->
+      <section id="course" class="section-anchor mb-12">
+        <div class="flex items-center gap-3 mb-6">
+          <div class="w-8 h-8 rounded-lg bg-olive/15 border border-olive/30 flex items-center justify-center text-sm">🏛️</div>
+          <div>
+            <h2 class="font-editorial text-2xl font-bold text-parchment-50">MIT OCW Italian Course</h2>
+            <p class="text-xs text-espresso-600 mt-0.5">Speak Italian With Your Mouth Full (MIT ES.S41) — 7 endpoints</p>
+          </div>
+        </div>
+
+        <!-- /api/course/syllabus -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/syllabus</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Full 13-lesson academic curriculum with titles, CEFR levels, recipes, and objectives</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"course_id"</span>: <span class="json-str">"mitocw_ess41"</span>,
+    <span class="json-key">"title"</span>: <span class="json-str">"Speak Italian With Your Mouth Full (MIT OCW ES.S41)"</span>,
+    <span class="json-key">"institution"</span>: <span class="json-str">"Massachusetts Institute of Technology (Experimental Study Group)"</span>,
+    <span class="json-key">"total_lessons"</span>: <span class="json-num">13</span>,
+    <span class="json-key">"lessons"</span>: [
+      {
+        <span class="json-key">"id"</span>: <span class="json-num">1</span>,
+        <span class="json-key">"title_it"</span>: <span class="json-str">"Lezione 1: Benvenuti in Cucina!"</span>,
+        <span class="json-key">"title_en"</span>: <span class="json-str">"Lesson 1: Welcome to the Kitchen!"</span>,
+        <span class="json-key">"cefr_level"</span>: <span class="json-str">"A1"</span>,
+        <span class="json-key">"recipe"</span>: <span class="json-str">"Bruschetta Classica al Pomodoro e Basilico"</span>,
+        <span class="json-key">"vocab_count"</span>: <span class="json-num">10</span>,
+        <span class="json-key">"exam_questions_count"</span>: <span class="json-num">4</span>
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/lesson -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/lesson</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Full lesson dataset: objectives, vocabulary with phonetics, grammar rules, dialogue & recipe</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">id</td><td class="text-parchment-400">int</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Lesson number between <code class="text-ochre">1</code> and <code class="text-ochre">13</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"id"</span>: <span class="json-num">1</span>,
+    <span class="json-key">"title_it"</span>: <span class="json-str">"Lezione 1: Benvenuti in Cucina!"</span>,
+    <span class="json-key">"cefr_level"</span>: <span class="json-str">"A1"</span>,
+    <span class="json-key">"sections"</span>: {
+      <span class="json-key">"overview"</span>: { <span class="json-key">"objectives"</span>: [...], <span class="json-key">"culinary_context"</span>: <span class="json-str">"..."</span> },
+      <span class="json-key">"vocabulary"</span>: [{ <span class="json-key">"it"</span>: <span class="json-str">"la cucina"</span>, <span class="json-key">"en"</span>: <span class="json-str">"the kitchen"</span>, <span class="json-key">"phonetic"</span>: <span class="json-str">"koo-CHEE-nah"</span> }],
+      <span class="json-key">"grammar_breakdown"</span>: { <span class="json-key">"topic"</span>: <span class="json-str">"La Fonetica & Il Verbo Essere"</span>, <span class="json-key">"rules"</span>: [...] },
+      <span class="json-key">"dialogue"</span>: { <span class="json-key">"title"</span>: <span class="json-str">"Primo Incontro ai Fornelli"</span>, <span class="json-key">"lines"</span>: [...] },
+      <span class="json-key">"recipe_corner"</span>: { <span class="json-key">"dish"</span>: <span class="json-str">"Bruschetta Classica"</span>, <span class="json-key">"ingredients"</span>: [...], <span class="json-key">"steps"</span>: [...] }
+    }
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/exam -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/exam</code>
+              <p class="text-xs text-parchment-400 mt-0.5">4-question unit exit examination for a specific lesson</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">id</td><td class="text-parchment-400">int</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Lesson number (<code class="text-ochre">1-13</code>)</td></tr>
+                  <tr><td class="param-name">include_answers</td><td class="text-parchment-400">bool</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400"><code class="text-ochre">1</code> to include correct answer keys and explanations</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"lesson_id"</span>: <span class="json-num">1</span>,
+    <span class="json-key">"passing_score"</span>: <span class="json-num">3</span>,
+    <span class="json-key">"total_questions"</span>: <span class="json-num">4</span>,
+    <span class="json-key">"questions"</span>: [
+      {
+        <span class="json-key">"id"</span>: <span class="json-str">"q1_1"</span>,
+        <span class="json-key">"question"</span>: <span class="json-str">"Come si pronuncia la combinazione 'CH' nella parola 'bruschetta'?"</span>,
+        <span class="json-key">"options"</span>: [<span class="json-str">"Suono duro [k] come in 'kite'"</span>, <span class="json-str">"Suono dolce [ch]"</span>, <span class="json-str">"Suono sibilante"</span>, <span class="json-str">"Muta"</span>]
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/exam/submit -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-post font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">POST</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/exam/submit</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Submit unit exam answers, grade results, award XP, and advance student progress</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <div class="text-xs font-semibold text-espresso-600 uppercase tracking-wider mb-2">JSON Body</div>
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">lesson_id</td><td class="text-parchment-400">int</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Lesson number (<code class="text-ochre">1-13</code>)</td></tr>
+                  <tr><td class="param-name">answers</td><td class="text-parchment-400">object</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Dictionary of question IDs to chosen answer strings</td></tr>
+                  <tr><td class="param-name">user_id</td><td class="text-parchment-400">int</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400">Discord User ID for persistence and XP recording</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"lesson_id"</span>: <span class="json-num">1</span>,
+    <span class="json-key">"score"</span>: <span class="json-num">4</span>,
+    <span class="json-key">"max_score"</span>: <span class="json-num">4</span>,
+    <span class="json-key">"passed"</span>: <span class="json-bool">true</span>,
+    <span class="json-key">"xp_gained"</span>: <span class="json-num">50</span>,
+    <span class="json-key">"evaluations"</span>: [
+      {
+        <span class="json-key">"question_id"</span>: <span class="json-str">"q1_1"</span>,
+        <span class="json-key">"is_correct"</span>: <span class="json-bool">true</span>,
+        <span class="json-key">"explanation"</span>: <span class="json-str">"In italiano, la 'H' dopo la 'C' rende il suono duro [k]."</span>
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/progress -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/progress</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Retrieve a student's course progression, completed lessons, scores, and diploma status</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">user_id</td><td class="text-parchment-400">int</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Student Discord User ID</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"user_id"</span>: <span class="json-num">123456789</span>,
+    <span class="json-key">"current_lesson"</span>: <span class="json-num">2</span>,
+    <span class="json-key">"completed_lessons"</span>: [<span class="json-num">1</span>],
+    <span class="json-key">"completed_count"</span>: <span class="json-num">1</span>,
+    <span class="json-key">"total_lessons"</span>: <span class="json-num">13</span>,
+    <span class="json-key">"completion_percentage"</span>: <span class="json-num">8</span>,
+    <span class="json-key">"lesson_scores"</span>: { <span class="json-key">"1"</span>: <span class="json-num">4</span> },
+    <span class="json-key">"certificate_unlocked"</span>: <span class="json-bool">false</span>
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/leaderboard -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/leaderboard</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Top students ranked by completed lessons and cumulative examination score</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"count"</span>: <span class="json-num">2</span>,
+    <span class="json-key">"leaderboard"</span>: [
+      { <span class="json-key">"user_id"</span>: <span class="json-num">102</span>, <span class="json-key">"completed_count"</span>: <span class="json-num">13</span>, <span class="json-key">"total_score"</span>: <span class="json-num">52</span>, <span class="json-key">"graduated"</span>: <span class="json-bool">true</span> }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/course/certificate -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/course/certificate</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Official MIT OCW Graduation Diploma verification and academic honors</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">user_id</td><td class="text-parchment-400">int</td><td><span class="param-req">Required</span></td><td class="text-parchment-400">Graduate Discord User ID</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"status"</span>: <span class="json-str">"valid"</span>,
+    <span class="json-key">"institution"</span>: <span class="json-str">"Massachusetts Institute of Technology (MIT)"</span>,
+    <span class="json-key">"course_title"</span>: <span class="json-str">"Speak Italian With Your Mouth Full"</span>,
+    <span class="json-key">"final_score"</span>: <span class="json-str">"50 / 52"</span>,
+    <span class="json-key">"percentage"</span>: <span class="json-num">96</span>,
+    <span class="json-key">"honors"</span>: <span class="json-str">"Cum Laude"</span>,
+    <span class="json-key">"instructors"</span>: [<span class="json-str">"Dr. Paola Rebusco"</span>, <span class="json-str">"Chef Graham Gordon Ramsay"</span>]
+  }
+}</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ─── READING & CULTURE ────────────────────────────────────── -->
       <section id="reading" class="section-anchor mb-12">
         <div class="flex items-center gap-3 mb-6">
           <div class="w-8 h-8 rounded-lg bg-terracotta/15 border border-terracotta/30 flex items-center justify-center text-sm">📰</div>
           <div>
-            <h2 class="font-editorial text-2xl font-bold text-parchment-50">Reading</h2>
-            <p class="text-xs text-espresso-600 mt-0.5">Graded micro-stories with glossary and comprehension — 3 endpoints</p>
+            <h2 class="font-editorial text-2xl font-bold text-parchment-50">Reading & Culture</h2>
+            <p class="text-xs text-espresso-600 mt-0.5">Micro-stories, situational dialogues, tongue twisters & cultural pills — 9 endpoints</p>
           </div>
         </div>
+
 
         <div class="endpoint-card">
           <div class="endpoint-header" onclick="toggleBody(this)">
@@ -1424,7 +1685,206 @@
             <div class="json-block">{ <span class="json-key">"ok"</span>: <span class="json-bool">true</span>, <span class="json-key">"data"</span>: { <span class="json-key">"correct"</span>: <span class="json-bool">true</span>, <span class="json-key">"correct_answer"</span>: <span class="json-str">"Nel bar"</span> } }</div>
           </div>
         </div>
+
+        <!-- /api/reading/dialogues -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/dialogues</code>
+              <p class="text-xs text-parchment-400 mt-0.5">List authentic situational conversation scenarios (bar, restaurant, hotel, train, pharmacy)</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">level</td><td class="text-parchment-400">string</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400">Filter by CEFR level (<code class="text-ochre">A1</code>, <code class="text-ochre">A2</code>)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"count"</span>: <span class="json-num">6</span>,
+    <span class="json-key">"dialogues"</span>: [
+      {
+        <span class="json-key">"id"</span>: <span class="json-str">"al_bar"</span>,
+        <span class="json-key">"title"</span>: <span class="json-str">"Al Bar • Colazione all'Italiana"</span>,
+        <span class="json-key">"level"</span>: <span class="json-str">"A1"</span>,
+        <span class="json-key">"category"</span>: <span class="json-str">"Cibo & Bar"</span>,
+        <span class="json-key">"lines_count"</span>: <span class="json-num">6</span>
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/reading/dialogue -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/dialogue</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Full situational dialogue with bilingual lines, cultural context, key phrases, and quiz</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">id</td><td class="text-parchment-400">string</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400">Dialogue ID (e.g. <code class="text-ochre">al_bar</code>, <code class="text-ochre">al_ristorante</code>)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"id"</span>: <span class="json-str">"al_bar"</span>,
+    <span class="json-key">"title"</span>: <span class="json-str">"Al Bar • Colazione all'Italiana"</span>,
+    <span class="json-key">"lines"</span>: [
+      { <span class="json-key">"speaker"</span>: <span class="json-str">"Barista"</span>, <span class="json-key">"it"</span>: <span class="json-str">"Buongiorno! Cosa le porto?"</span>, <span class="json-key">"en"</span>: <span class="json-str">"Good morning! What can I get you?"</span> }
+    ],
+    <span class="json-key">"key_phrases"</span>: [
+      { <span class="json-key">"it"</span>: <span class="json-str">"Vorrei... per favore"</span>, <span class="json-key">"en"</span>: <span class="json-str">"I would like... please"</span> }
+    ],
+    <span class="json-key">"quiz"</span>: {
+      <span class="json-key">"question"</span>: <span class="json-str">"Come si ordina educatamente una colazione in un bar italiano?"</span>,
+      <span class="json-key">"answer"</span>: <span class="json-str">"Vorrei un cappuccino e un cornetto, per favore."</span>
+    }
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/reading/tongue-twisters -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/tongue-twisters</code>
+              <p class="text-xs text-parchment-400 mt-0.5">List traditional Italian tongue twisters (scioglilingua) for phonetic mastery</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">difficulty</td><td class="text-parchment-400">string</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400"><code class="text-ochre">facile</code>, <code class="text-ochre">medio</code>, or <code class="text-ochre">difficile</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"count"</span>: <span class="json-num">10</span>,
+    <span class="json-key">"tongue_twisters"</span>: [
+      {
+        <span class="json-key">"id"</span>: <span class="json-str">"tigri"</span>,
+        <span class="json-key">"text_it"</span>: <span class="json-str">"Tre tigri contro tre tigri."</span>,
+        <span class="json-key">"text_en"</span>: <span class="json-str">"Three tigers against three tigers."</span>,
+        <span class="json-key">"focus_sound"</span>: <span class="json-str">"TR cluster & rolled R"</span>,
+        <span class="json-key">"difficulty"</span>: <span class="json-str">"facile"</span>
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/reading/tongue-twister -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/tongue-twister</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Target tongue twister with syllable breakdowns, phonetic guidance, and translation</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"id"</span>: <span class="json-str">"sopra_la_panca"</span>,
+    <span class="json-key">"text_it"</span>: <span class="json-str">"Sopra la panca la capra campa, sotto la panca la capra crepa."</span>,
+    <span class="json-key">"syllables"</span>: <span class="json-str">"Sò-pra la pàn-ca la cà-pra càm-pa..."</span>,
+    <span class="json-key">"phonetic_tip"</span>: <span class="json-str">"Keep the bilabial P sharp and bounce between CAMPA and CREPA."</span>
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/reading/culture -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/culture</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Catalog of Italian cultural etiquette, social customs, and tradition pills</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="mb-4">
+              <table class="param-table">
+                <thead><tr><th>Name</th><th>Type</th><th>Required</th><th>Description</th></tr></thead>
+                <tbody>
+                  <tr><td class="param-name">category</td><td class="text-parchment-400">string</td><td><span class="param-opt">Optional</span></td><td class="text-parchment-400">Filter by category (<code class="text-ochre">caffè</code>, <code class="text-ochre">cibo</code>, <code class="text-ochre">galateo</code>, <code class="text-ochre">gesti</code>)</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"count"</span>: <span class="json-num">10</span>,
+    <span class="json-key">"culture_capsules"</span>: [
+      {
+        <span class="json-key">"id"</span>: <span class="json-str">"cappuccino_regola"</span>,
+        <span class="json-key">"title"</span>: <span class="json-str">"La Regola Aurea del Cappuccino"</span>,
+        <span class="json-key">"category"</span>: <span class="json-str">"Cultura del Caffè"</span>,
+        <span class="json-key">"rule"</span>: <span class="json-str">"Niente cappuccino dopo le 11:00 o dopo pranzo."</span>
+      }
+    ]
+  }
+}</div>
+          </div>
+        </div>
+
+        <!-- /api/reading/culture/random -->
+        <div class="endpoint-card">
+          <div class="endpoint-header" onclick="toggleBody(this)">
+            <span class="badge-get font-mono text-[10px] font-bold px-2 py-0.5 rounded flex-shrink-0 mt-0.5">GET</span>
+            <div class="flex-1 min-w-0">
+              <code class="text-sm text-parchment-100">/api/reading/culture/random</code>
+              <p class="text-xs text-parchment-400 mt-0.5">Random cultural etiquette capsule with interactive trivia question</p>
+            </div>
+            <i class="fa fa-chevron-down text-espresso-600 text-xs mt-1 transition-transform"></i>
+          </div>
+          <div class="endpoint-body hidden">
+            <div class="json-block">{
+  <span class="json-key">"success"</span>: <span class="json-bool">true</span>,
+  <span class="json-key">"data"</span>: {
+    <span class="json-key">"id"</span>: <span class="json-str">"galateo_pasta"</span>,
+    <span class="json-key">"title"</span>: <span class="json-str">"Il Galateo della Pasta Lunga"</span>,
+    <span class="json-key">"category"</span>: <span class="json-str">"Galateo a Tavola"</span>,
+    <span class="json-key">"quiz"</span>: {
+      <span class="json-key">"question"</span>: <span class="json-str">"È considerato educato tagliare gli spaghetti con il coltello?"</span>,
+      <span class="json-key">"answer"</span>: <span class="json-str">"No, è un grave errore di galateo: si arrotolano solo con la forchetta."</span>
+    }
+  }
+}</div>
+          </div>
+        </div>
       </section>
+
 
       <!-- ─── GAMES ──────────────────────────────────────────────── -->
       <section id="games" class="section-anchor mb-12">
@@ -2204,10 +2664,12 @@ assert($json[<span class="json-str">'data'</span>][<span class="json-str">'word'
             <span class="font-editorial text-sm text-parchment-400">Maestro</span>
             <span class="ml-2">REST API v2.5.0</span>
             <span class="mx-2">·</span>
-            <span>56 endpoints · 11 groups · 623,573 Italian words offline</span>
+            <span>46 endpoints · 11 groups · 623,573 Italian words offline</span>
           </div>
           <div>
             <a href="../index.html" class="hover:text-parchment-300 transition-colors">← Main Docs</a>
+            <span class="mx-2">·</span>
+            <a href="index.php" class="hover:text-parchment-300 transition-colors">JSON Catalog</a>
           </div>
         </div>
       </footer>

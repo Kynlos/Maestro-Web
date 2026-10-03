@@ -223,6 +223,18 @@
   <!-- Top Tricolore Accent Strip -->
   <div class="h-1.5 w-full tricolore-strip"></div>
 
+  <!-- Top Community Discord Announcement Bar -->
+  <div class="bg-[#5865F2]/10 dark:bg-[#5865F2]/20 border-b border-[#5865F2]/25 py-2.5 px-4 text-center text-xs">
+    <div class="max-w-7xl mx-auto flex items-center justify-center flex-wrap gap-2 text-parchment-900 dark:text-parchment-100 font-medium">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-[#5865F2] text-white text-[11px] shadow-xs"><i class="fa-brands fa-discord"></i></span>
+      <span>Join the official Maestro Discord Community to study Italian, take the MIT course &amp; duel with classmates!</span>
+      <a href="https://discord.gg/fESWJVReST" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-bold text-[#5865F2] hover:text-[#4752C4] dark:text-[#7983f5] underline transition-colors">
+        <span>discord.gg/fESWJVReST</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+      </a>
+    </div>
+  </div>
+
   <!-- Header / Navigation -->
   <header class="sticky top-0 z-50 backdrop-blur-md bg-parchment-50/90 dark:bg-espresso-950/90 border-b border-parchment-200 dark:border-espresso-800 transition-colors duration-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -246,7 +258,8 @@
         <a href="#chat-preview" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Preview</a>
         <a href="#dizionario" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Dictionary</a>
         <a href="#interactive-demo" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Student Desk</a>
-        <a href="#commands" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Commands (80+)</a>
+        <a href="#mit-course" class="hover:text-olive dark:hover:text-olive-light transition-colors font-bold text-olive dark:text-olive-light">MIT Course</a>
+        <a href="#commands" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Commands (98+)</a>
         <a href="#new-features" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Features</a>
         <a href="#anki-guide" class="hover:text-terracotta dark:hover:text-terracotta-light transition-colors">Anki</a>
       </nav>
@@ -258,12 +271,18 @@
         </a>
         <a href="api.html" class="px-3 py-1.5 rounded-lg text-parchment-700 dark:text-parchment-300 hover:text-ochre dark:hover:text-ochre-light font-medium transition-colors flex items-center gap-1.5">
           <span>⚡ REST API</span>
-          <span class="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-ochre/15 text-ochre font-bold">56</span>
+          <span class="text-[10px] font-mono px-1.5 py-0.2 rounded-full bg-ochre/15 text-ochre font-bold">69</span>
         </a>
       </div>
 
-      <!-- Right Controls: Theme Switcher + Add Bot -->
-      <div class="flex items-center space-x-3">
+      <!-- Right Controls: Discord Community + Theme Switcher + Add Bot -->
+      <div class="flex items-center space-x-2.5 sm:space-x-3">
+        <!-- Discord Community Button -->
+        <a href="https://discord.gg/fESWJVReST" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 px-3 py-2 rounded-xl bg-[#5865F2] hover:bg-[#4752C4] text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow transition-all">
+          <i class="fa-brands fa-discord text-sm"></i>
+          <span class="hidden sm:inline">Discord</span>
+        </a>
+
         <!-- Theme Switcher Button -->
         <button onclick="toggleTheme()" id="themeBtn" aria-label="Toggle theme" class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-850 border border-parchment-300 dark:border-espresso-700 text-parchment-800 dark:text-parchment-200 hover:border-terracotta transition-all text-sm">
           <i id="themeIcon" class="fa-solid fa-moon"></i>
@@ -283,8 +302,8 @@
       
       <!-- Stamp / Eyebrow -->
       <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-parchment-100 dark:bg-espresso-850 border border-parchment-300 dark:border-espresso-700 text-xs font-medium text-parchment-800 dark:text-parchment-200 mb-8 shadow-xs">
-        <span class="w-2 h-2 rounded-full bg-olive dark:bg-olive-light"></span>
-        <span>A hand-crafted language companion • 100% deterministic • No audio or voice channels</span>
+        <span class="w-2 h-2 rounded-full bg-olive dark:bg-olive-light animate-pulse"></span>
+        <span>MIT OCW Italian Course • User App Installable • 100% Deterministic Rule Engine</span>
       </div>
 
       <!-- Main Headline: Classic Humanist Display -->
@@ -300,6 +319,22 @@
         solve authentic <span class="it-word">Crucipuzzle<span class="tip-box">Italian word searches</span></span>, practice formal courtesy speech, and keep your daily study streak alive.
       </p>
 
+      <!-- Hero CTA Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-8">
+        <a href="https://discord.gg/fESWJVReST" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-[#5865F2] hover:bg-[#4752C4] text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow transition-all">
+          <i class="fa-brands fa-discord text-base"></i>
+          <span>Join Discord Server</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+        <a href="#mit-course" class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-olive hover:bg-olive-light text-white text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow transition-all">
+          <span>Explore MIT Course</span>
+          <i class="fa-solid fa-arrow-down text-[10px]"></i>
+        </a>
+        <a href="#commands" class="inline-flex items-center space-x-2 px-5 py-3 rounded-xl bg-parchment-100 dark:bg-espresso-850 border border-parchment-300 dark:border-espresso-700 hover:border-terracotta text-parchment-900 dark:text-parchment-100 text-xs font-bold uppercase tracking-wider shadow-sm transition-all">
+          <span>Command Catalog (98+)</span>
+        </a>
+      </div>
+
       <!-- Hover Hint Note -->
       <div class="inline-flex items-center space-x-2 text-xs text-parchment-800 dark:text-parchment-300 bg-parchment-100/70 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 rounded-xl px-4 py-2 mb-12">
         <span class="text-terracotta text-sm">💡</span>
@@ -310,7 +345,7 @@
       <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-4xl mx-auto">
         <div class="p-5 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-left">
           <div class="text-2xl font-editorial font-bold text-olive dark:text-olive-light">78 Top-Level</div>
-          <div class="text-[11px] font-mono uppercase tracking-wider text-parchment-800 dark:text-parchment-300 mt-1">9 Groups • 88 Subs</div>
+          <div class="text-[11px] font-mono uppercase tracking-wider text-parchment-800 dark:text-parchment-300 mt-1">10 Groups • 98 Subs</div>
           <div class="text-xs text-parchment-800 dark:text-parchment-300 mt-1">Structured command hierarchy</div>
         </div>
 
@@ -817,7 +852,143 @@
     </div>
   </section>
 
-    <!-- Complete Slash Command Catalog (60+ Commands & Subcommands) -->
+  <!-- ==============================================================================
+       MIT OPENCOURSEWARE ITALIAN COURSE SHOWCASE (ES.S41)
+       ============================================================================== -->
+  <section id="mit-course" class="py-20 border-b border-parchment-200 dark:border-espresso-800 bg-parchment-100/40 dark:bg-espresso-900/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="max-w-3xl mx-auto text-center mb-16">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-olive/10 text-olive dark:text-olive-light border border-olive/20 text-xs font-mono font-bold mb-3">
+          <span>🏛️ MIT OPENCOURSEWARE • ES.S41</span>
+          <span>•</span>
+          <span>CULINARY LINGUISTICS</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-editorial font-bold text-parchment-900 dark:text-parchment-50 leading-tight">
+          Speak Italian With Your Mouth Full
+        </h2>
+        <p class="text-xs sm:text-sm text-parchment-800 dark:text-parchment-300 mt-3 leading-relaxed">
+          The celebrated university curriculum from the <strong>Massachusetts Institute of Technology (Experimental Study Group)</strong>, brought directly into Discord. Master phonetics, morphology, syntax, and conversation through Italy's culinary soul.
+        </p>
+      </div>
+
+      <!-- 4 Pillars of the Course Experience -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mb-14">
+        
+        <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-olive transition-all">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-olive/10 text-olive dark:text-olive-light flex items-center justify-center text-lg mb-4">
+              📚
+            </div>
+            <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-100 mb-1">13 Academic Modules</h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">
+              Curated progression from kitchen greetings (A1) to the final graduation banquet (B1). Includes 4-page interactive Discord readers.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-parchment-200 dark:border-espresso-800 font-mono text-[11px] text-olive dark:text-olive-light">
+            <code>/course lesson [1-13]</code>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-terracotta transition-all">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-terracotta/10 text-terracotta dark:text-terracotta-light flex items-center justify-center text-lg mb-4">
+              🍝
+            </div>
+            <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-100 mb-1">Gastronomy &amp; Recipes</h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">
+              Every lesson centers on an authentic regional dish: Carbonara, Tiramisù, Focaccia Genovese, Risotto alla Milanese, and Tagliatelle al Ragù.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-parchment-200 dark:border-espresso-800 font-mono text-[11px] text-terracotta dark:text-terracotta-light">
+            <code>13 Traditional Recipes</code>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-amalfi transition-all">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-amalfi/10 text-amalfi dark:text-amalfi-light flex items-center justify-center text-lg mb-4">
+              🧠
+            </div>
+            <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-100 mb-1">Exit Exams &amp; Deck Sync</h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">
+              Pass 4-question exit exams (3/4 passing score) to earn XP, and sync culinary vocabulary into your personal SM-2 spaced repetition deck in 1 click.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-parchment-200 dark:border-espresso-800 font-mono text-[11px] text-amalfi dark:text-amalfi-light">
+            <code>/course exam</code> • <code>/course deck</code>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-ochre transition-all">
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-ochre/10 text-ochre dark:text-ochre-light flex items-center justify-center text-lg mb-4">
+              🎓
+            </div>
+            <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-100 mb-1">Graduation Diploma</h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">
+              Complete all 13 lesson exit exams to unlock your personalized MIT OCW Certificate of Completion and graduate with honors.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-parchment-200 dark:border-espresso-800 font-mono text-[11px] text-ochre dark:text-ochre-light">
+            <code>/course certificate</code>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Interactive Syllabus Explorer -->
+      <div class="rounded-3xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 p-6 sm:p-8 shadow-sm">
+        
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between pb-6 border-b border-parchment-200 dark:border-espresso-800 gap-4">
+          <div>
+            <span class="text-xs font-mono font-bold uppercase tracking-widest text-olive dark:text-olive-light">Interactive Syllabus Explorer</span>
+            <h3 class="text-2xl font-editorial font-bold text-parchment-900 dark:text-parchment-50 mt-1">Browse the 13 Course Modules</h3>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 mt-1">Select any module below to inspect its pedagogical objectives, grammar focus, culinary dish, and sample exam challenge.</p>
+          </div>
+
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-300 dark:border-espresso-800 text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-olive animate-ping"></span>
+            <span class="text-parchment-800 dark:text-parchment-200">100% Deterministic • Offline Engine</span>
+          </div>
+        </div>
+
+        <!-- 13 Module Pills Selector (Scrollable) -->
+        <div class="flex items-center gap-2 overflow-x-auto py-4 scrollbar-thin border-b border-parchment-200 dark:border-espresso-800 mb-6" id="coursePillContainer">
+          <!-- Filled by JavaScript -->
+        </div>
+
+        <!-- Selected Lesson Display Panel -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8" id="courseLessonDisplay">
+          <!-- Filled by JavaScript -->
+        </div>
+
+      </div>
+
+      <!-- Diploma Showcase Strip -->
+      <div class="mt-8 p-6 rounded-3xl bg-gradient-to-r from-olive/10 via-parchment-100 dark:via-espresso-900 to-terracotta/10 border border-parchment-300 dark:border-espresso-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center space-x-4">
+          <div class="w-14 h-14 rounded-2xl bg-white dark:bg-espresso-850 border border-parchment-300 dark:border-espresso-700 flex items-center justify-center text-3xl shadow-xs shrink-0">
+            📜
+          </div>
+          <div>
+            <div class="text-xs font-mono font-bold uppercase tracking-wider text-olive dark:text-olive-light">Official Course Certification</div>
+            <h4 class="font-editorial text-xl font-bold text-parchment-900 dark:text-parchment-50">MIT OCW ES.S41 Graduation Diploma</h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 mt-0.5">Students who pass all 13 module exams with 75%+ score receive a verifiable certificate renderable directly in Discord chat.</p>
+          </div>
+        </div>
+        <div class="shrink-0 flex items-center gap-3">
+          <a href="#commands" class="px-4 py-2.5 rounded-xl bg-olive hover:bg-olive-light text-white text-xs font-bold font-mono uppercase tracking-wider transition-colors shadow-sm">
+            <code>/course certificate</code>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Complete Slash Command Catalog (98+ Commands & Subcommands) -->
   <section id="commands" class="py-20 border-b border-parchment-200 dark:border-espresso-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       
@@ -825,7 +996,7 @@
         <div>
           <span class="text-xs font-mono font-bold uppercase tracking-widest text-terracotta dark:text-terracotta-light">Command Handbook</span>
           <h2 class="text-3xl sm:text-4xl font-editorial font-bold text-parchment-900 dark:text-parchment-50 mt-1">Full Directory of Maestro's Commands</h2>
-          <p class="text-xs sm:text-sm text-parchment-800 dark:text-parchment-300 mt-2">Filter by study focus or search by keywords to explore all 60+ commands, subcommands, and linguistic tools.</p>
+          <p class="text-xs sm:text-sm text-parchment-800 dark:text-parchment-300 mt-2">Filter by study focus or search by keywords to explore all 98+ commands, subcommands, and linguistic tools.</p>
         </div>
 
         <!-- Search Bar -->
@@ -846,8 +1017,8 @@
               <span class="text-xs font-mono font-bold uppercase tracking-widest text-terracotta dark:text-terracotta-light">Command Architecture</span>
               <span class="px-2 py-0.5 text-[10px] font-mono font-bold rounded-full bg-olive/10 text-olive dark:text-olive-light border border-olive/20">Verified Discord Tree</span>
             </div>
-            <h3 class="text-2xl font-editorial font-bold text-parchment-900 dark:text-parchment-50 mt-1">78 Top-Level Commands • 9 Groups • 88 Subcommands</h3>
-            <p class="text-xs text-parchment-800 dark:text-parchment-300 mt-1 max-w-2xl">Maestro organizes its capabilities into 9 primary topic groups containing 88 dedicated subcommands, backed by 69 direct standalone shortcuts for rapid daily study.</p>
+            <h3 class="text-2xl font-editorial font-bold text-parchment-900 dark:text-parchment-50 mt-1">78 Top-Level Commands • 10 Groups • 98 Subcommands</h3>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 mt-1 max-w-2xl">Maestro organizes its capabilities into 10 primary topic groups containing 98 dedicated subcommands, backed by 69 direct standalone shortcuts for rapid daily study.</p>
           </div>
 
           <!-- Quick Summary Stat Badges -->
@@ -857,11 +1028,11 @@
               <div class="text-[10px] font-mono uppercase tracking-wider text-parchment-800 dark:text-parchment-300">Top-Level</div>
             </div>
             <div class="px-3.5 py-2 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-300 dark:border-espresso-800 text-center min-w-[70px]">
-              <div class="text-lg font-bold font-editorial text-terracotta dark:text-terracotta-light">9</div>
+              <div class="text-lg font-bold font-editorial text-terracotta dark:text-terracotta-light">10</div>
               <div class="text-[10px] font-mono uppercase tracking-wider text-parchment-800 dark:text-parchment-300">Groups</div>
             </div>
             <div class="px-3.5 py-2 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-300 dark:border-espresso-800 text-center min-w-[70px]">
-              <div class="text-lg font-bold font-editorial text-amalfi dark:text-amalfi-light">88</div>
+              <div class="text-lg font-bold font-editorial text-amalfi dark:text-amalfi-light">98</div>
               <div class="text-[10px] font-mono uppercase tracking-wider text-parchment-800 dark:text-parchment-300">Subcommands</div>
             </div>
             <div class="px-3.5 py-2 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-300 dark:border-espresso-800 text-center min-w-[70px]">
@@ -1133,6 +1304,32 @@
             </div>
           </div>
 
+          <!-- Group 10: /course (7 subs) -->
+          <div class="p-4 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-mono font-bold text-sm text-olive dark:text-olive-light">/course</span>
+                <span class="px-2 py-0.5 rounded-full bg-olive/10 text-olive dark:text-olive-light border border-olive/20 text-xs font-mono font-bold">7 subs</span>
+              </div>
+              <div class="text-xs font-semibold text-parchment-900 dark:text-parchment-100 mb-1">MIT OpenCourseWare (ES.S41)</div>
+              <p class="text-[11px] text-parchment-800 dark:text-parchment-300 mb-3 leading-relaxed">
+                Academic curriculum through gastronomy: 13 modules, exit exams, SRS deck imports, and graduation diplomas.
+              </p>
+              <div class="flex flex-wrap gap-1 mb-3">
+                <span class="px-1.5 py-0.5 rounded bg-terracotta/15 font-mono text-[10px] text-terracotta dark:text-terracotta-light font-medium">syllabus ⭐</span>
+                <span class="px-1.5 py-0.5 rounded bg-terracotta/15 font-mono text-[10px] text-terracotta dark:text-terracotta-light font-medium">lesson ⭐</span>
+                <span class="px-1.5 py-0.5 rounded bg-terracotta/15 font-mono text-[10px] text-terracotta dark:text-terracotta-light font-medium">exam ⭐</span>
+                <span class="px-1.5 py-0.5 rounded bg-terracotta/15 font-mono text-[10px] text-terracotta dark:text-terracotta-light font-medium">deck ⭐</span>
+                <span class="px-1.5 py-0.5 rounded bg-parchment-200 dark:bg-espresso-850 font-mono text-[10px] text-parchment-800 dark:text-parchment-200">progress</span>
+                <span class="px-1.5 py-0.5 rounded bg-parchment-200 dark:bg-espresso-850 font-mono text-[10px] text-parchment-800 dark:text-parchment-200">certificate</span>
+                <span class="px-1.5 py-0.5 rounded bg-parchment-200 dark:bg-espresso-850 font-mono text-[10px] text-parchment-800 dark:text-parchment-200">leaderboard</span>
+              </div>
+            </div>
+            <div class="text-[10px] font-mono text-parchment-800 dark:text-parchment-400 border-t border-parchment-200 dark:border-espresso-800 pt-2">
+              Commands: <code>/course syllabus</code>, <code>/course lesson</code>, <code>/course exam</code>, <code>/course deck</code>
+            </div>
+          </div>
+
         </div>
 
         <!-- Standalone Commands Banner -->
@@ -1148,7 +1345,9 @@
 
       <!-- Categories Filter Tabs -->
       <div class="flex flex-wrap gap-2 mb-8" id="categoryTabs">
-        <button onclick="filterCategory('all', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-terracotta text-white transition-all cat-btn">All Commands (78+)</button>
+        <button onclick="filterCategory('all', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-terracotta text-white transition-all cat-btn">All Commands (98+)</button>
+        <button onclick="filterCategory('course', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 hover:bg-parchment-200 dark:hover:bg-espresso-800 transition-all cat-btn">MIT Course (/course)</button>
+        <button onclick="filterCategory('reading', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 hover:bg-parchment-200 dark:hover:bg-espresso-800 transition-all cat-btn">Reading &amp; Culture</button>
         <button onclick="filterCategory('verbo', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 hover:bg-parchment-200 dark:hover:bg-espresso-800 transition-all cat-btn">Verbs (/verbo)</button>
         <button onclick="filterCategory('deck', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 hover:bg-parchment-200 dark:hover:bg-espresso-800 transition-all cat-btn">Flashcards (/deck)</button>
         <button onclick="filterCategory('grammatica', this)" class="px-4 py-2 text-xs font-semibold rounded-xl bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 hover:bg-parchment-200 dark:hover:bg-espresso-800 transition-all cat-btn">Grammar (/grammatica)</button>
@@ -1161,6 +1360,138 @@
 
       <!-- Commands Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cmdGrid">
+
+        <!-- ==================== MIT COURSE (/course) ==================== -->
+
+        <!-- Card: /course syllabus -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course syllabus mit ocw lessons modules curriculum university academic cooking recipe">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course syllabus</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">MIT OCW</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Displays the complete 13-lesson curriculum of MIT's <em>Speak Italian With Your Mouth Full</em> (ES.S41). Shows your personal progress, completion checkmarks, CEFR levels (A1-B1), and featured regional recipes.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-olive dark:text-olive-light">/course syllabus</span>
+          </div>
+        </div>
+
+        <!-- Card: /course lesson -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course lesson reader overview vocabulary grammar dialogue recipe mit ocw">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course lesson &lt;numero&gt;</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Interactive Reader</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Opens the rich 4-page interactive lesson reader: <strong>1. Overview &amp; Objectives</strong>, <strong>2. Vocabulary &amp; Phonics</strong>, <strong>3. Grammar Breakdown</strong>, and <strong>4. Authentic Dialogue &amp; Culinary Recipe</strong> with pagination controls.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-olive dark:text-olive-light">/course lesson numero:1</span>
+          </div>
+        </div>
+
+        <!-- Card: /course exam -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course exam test quiz graduation exit exam passing score xp mit ocw">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course exam &lt;numero&gt;</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Exit Exam</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Take the 4-question mastery exit exam for any module. Requires a score of 3/4 or higher to pass, unlocks course advancement, awards bonus XP, and logs mistakes directly to your remedial review loop.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-olive dark:text-olive-light">/course exam numero:1</span>
+          </div>
+        </div>
+
+        <!-- Card: /course deck -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course deck flashcards srs sm2 import vocabulary mit ocw">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course deck &lt;numero&gt;</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">SRS Sync</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              1-click batch import of all culinary, grammatical, and phonetics flashcards from any MIT course lesson directly into your personal SuperMemo SM-2 deck.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-olive dark:text-olive-light">/course deck numero:1</span>
+          </div>
+        </div>
+
+        <!-- Card: /course progress & certificate -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course progress certificate diploma graduation honors mit ocw">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course certificate</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Graduation</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Generate your official personalized MIT OCW Graduation Diploma upon completing all 13 modules. View your completion percentage and exam averages anytime with <code>/course progress</code>.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Commands: <span class="text-olive dark:text-olive-light">/course progress</span> • <span class="text-olive dark:text-olive-light">/course certificate</span>
+          </div>
+        </div>
+
+        <!-- ==================== READING & CULTURE (/reading) ==================== -->
+
+        <!-- Card: /reading dialogue -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="reading" data-keywords="reading dialogue dialogo scenario bar cafe trattoria restaurant station hotel pharmacy conversation shortcut dialogue">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/dialogue [scenario] [level]</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Conversation</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Practice real-life conversational dialogues at the coffee bar, trattoria, train station, hotel check-in, or pharmacy. Includes turn-by-turn lines, English translations, and comprehension verification quizzes. Shortcut: <code>/dialogue</code>.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-amalfi dark:text-amalfi-light">/dialogue scenario:al_bar</span>
+          </div>
+        </div>
+
+        <!-- Card: /reading tongue-twister -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="reading" data-keywords="reading tongue-twister scioglilingua pronunciation phonetics trentatré trentini apelle capra panca shortcut tongue-twister">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/tongue-twister [difficulty]</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Pronunciation</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Master the classic Italian <span class="it-word">scioglilingua<span class="tip-box">Tongue twisters that "melt the tongue"</span></span>! Features syllable-by-syllable breakdowns, tricky consonant clusters (<em>GLI, GN, SC, double consonants</em>), phonetic advice, and English translations. Shortcut: <code>/tongue-twister</code>.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-amalfi dark:text-amalfi-light">/tongue-twister difficolta:medio</span>
+          </div>
+        </div>
+
+        <!-- Card: /reading culture -->
+        <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="reading" data-keywords="reading culture cultura customs etiquette aperitivo caffe espresso scarpetta bella figura gestures shortcut culture">
+          <div>
+            <div class="flex items-center justify-between mb-2.5">
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/culture [category]</span>
+              <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Etiquette</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
+              Explore authentic Italian cultural etiquette, social rituals, and daily habits: coffee rules (no cappuccino after 11:00 AM!), the art of <span class="it-word">fare la scarpetta<span class="tip-box">Mopping up sauce with bread</span></span>, aperitivo culture, and hand gestures. Shortcut: <code>/culture</code>.
+            </p>
+          </div>
+          <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
+            Example: <span class="text-amalfi dark:text-amalfi-light">/culture categoria:caffe</span>
+          </div>
+        </div>
 
         <!-- ==================== VERBS (/verbo) ==================== -->
 
@@ -1989,13 +2320,13 @@
         <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-terracotta/10 text-terracotta dark:text-terracotta-light border border-terracotta/20 text-xs font-mono font-bold mb-3">
           <span>NEW EXPANSION PACK</span>
           <span>•</span>
-          <span>20 DETERMINISTIC FEATURES</span>
+          <span>25 DETERMINISTIC FEATURES</span>
         </div>
         <h2 class="text-3xl sm:text-4xl font-editorial font-bold text-parchment-900 dark:text-parchment-50">
-          The 20 New Capabilities of Maestro
+          The 25 New Capabilities of Maestro
         </h2>
         <p class="text-xs sm:text-sm text-parchment-800 dark:text-parchment-300 mt-3 leading-relaxed">
-          Engineered for serious learners and server communities. No black-box AI approximations, no voice clutter—just pure Italian grammar matrices, interactive Discord buttons, and persistent spaced repetition.
+          Engineered for serious learners and server communities. No black-box AI approximations, no voice clutter—just pure Italian grammar matrices, university curriculum, interactive Discord buttons, and persistent spaced repetition.
         </p>
       </div>
 
@@ -2406,13 +2737,118 @@
                 <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#20</span>
               </div>
               <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">Unified Command Architecture</h4>
-              <div class="font-mono text-xs text-olive dark:text-olive-light mb-3">78 Top-Level • 9 Groups • 88 Subcommands</div>
+              <div class="font-mono text-xs text-olive dark:text-olive-light mb-3">78 Top-Level • 10 Groups • 98 Subcommands</div>
               <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
-                Complete unification across bot and documentation: 9 structured command groups with 88 dedicated subcommands, supplemented by 69 zero-latency direct shortcuts for daily study habits and 2 interactive context menus.
+                Complete unification across bot and documentation: 10 structured command groups with 98 dedicated subcommands, supplemented by 69 zero-latency direct shortcuts for daily study habits and 2 interactive context menus.
               </p>
             </div>
             <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
               Inspect: <code>python scripts/inspect_tree.py</code>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pillar 5: University Curriculum, Conversational Immersion & User App (5 Features) -->
+      <div>
+        <div class="flex items-center space-x-3 mb-6 pb-2 border-b border-parchment-200 dark:border-espresso-800">
+          <span class="w-8 h-8 rounded-lg bg-olive/15 text-olive dark:text-olive-light flex items-center justify-center font-bold text-sm">V</span>
+          <div>
+            <h3 class="font-editorial text-xl font-bold text-parchment-900 dark:text-parchment-100">University Curriculum, Conversational Immersion &amp; User App</h3>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300">Academic MIT course, situational dialogues, phonetics tongue twisters, cultural etiquette &amp; user install.</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Feature 21: MIT OpenCourseWare Italian Course -->
+          <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-olive transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-olive/15 text-olive dark:text-olive-light uppercase">Academic Course</span>
+                <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#21</span>
+              </div>
+              <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">MIT OpenCourseWare (ES.S41)</h4>
+              <div class="font-mono text-xs text-olive dark:text-olive-light mb-3"><code>/course syllabus</code> • <code>/course lesson</code></div>
+              <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
+                The full 13-module MIT ESG university course <em>"Speak Italian With Your Mouth Full"</em>. Features 4-page interactive Discord readers, authentic Italian regional recipes, 4-question exit exams (3/4 passing score) with XP rewards, 1-click SRS flashcard import, and official graduation diploma.
+              </p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
+              Try: <code>/course lesson numero:1</code>
+            </div>
+          </div>
+
+          <!-- Feature 22: Authentic Situational Dialogues -->
+          <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-amalfi transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-amalfi/15 text-amalfi dark:text-amalfi-light uppercase">Everyday Italian</span>
+                <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#22</span>
+              </div>
+              <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">Situational Dialogues</h4>
+              <div class="font-mono text-xs text-amalfi dark:text-amalfi-light mb-3"><code>/dialogue</code> • <code>/reading dialogue</code></div>
+              <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
+                Realistic Italian conversation practice across everyday scenarios: ordering at the coffee bar, reserving at the trattoria, boarding at the railway station, checking into a hotel, or consulting a pharmacy. Includes turn-by-turn lines, translations, and comprehension quizzes.
+              </p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
+              Try: <code>/dialogue scenario:al_bar</code>
+            </div>
+          </div>
+
+          <!-- Feature 23: Scioglilingua & Phonetics Lab -->
+          <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-amalfi transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-amalfi/15 text-amalfi dark:text-amalfi-light uppercase">Phonetics Lab</span>
+                <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#23</span>
+              </div>
+              <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">Scioglilingua (Tongue Twisters)</h4>
+              <div class="font-mono text-xs text-amalfi dark:text-amalfi-light mb-3"><code>/tongue-twister</code> • <code>/reading tongue-twister</code></div>
+              <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
+                Master Italian consonant clusters and pronunciation with traditional tongue twisters graded across 4 difficulty tiers: Facile, Medio, Difficile, and Maestro. Complete with syllable breaks, tricky sound analysis (<em>GLI, GN, SC, double consonants</em>), and English translations.
+              </p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
+              Try: <code>/tongue-twister difficolta:medio</code>
+            </div>
+          </div>
+
+          <!-- Feature 24: Cultural Capsules & Social Etiquette -->
+          <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-terracotta transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-terracotta/15 text-terracotta dark:text-terracotta-light uppercase">Culture &amp; Customs</span>
+                <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#24</span>
+              </div>
+              <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">Cultural Capsules &amp; Etiquette</h4>
+              <div class="font-mono text-xs text-terracotta dark:text-terracotta-light mb-3"><code>/culture</code> • <code>/reading culture</code></div>
+              <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
+                Explore authentic Italian social customs and unwritten rules: the strict etiquette of coffee (never order a cappuccino after 11:00 AM!), the sacred tradition of <span class="it-word">fare la scarpetta<span class="tip-box">Using bread to clean the pasta sauce off your plate</span></span>, aperitivo culture, and expressive hand gestures.
+              </p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
+              Try: <code>/culture categoria:caffe</code>
+            </div>
+          </div>
+
+          <!-- Feature 25: Discord User-App Installation -->
+          <div class="p-6 rounded-2xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 flex flex-col justify-between hover:border-ochre transition-all">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-ochre/15 text-ochre dark:text-ochre-light uppercase">User App Mode</span>
+                <span class="text-xs font-mono text-parchment-800 dark:text-parchment-300">#25</span>
+              </div>
+              <h4 class="font-editorial text-lg font-bold text-parchment-900 dark:text-parchment-50 mb-1">Global User App Installation</h4>
+              <div class="font-mono text-xs text-ochre dark:text-ochre-light mb-3">Discord Integration Context: Guild &amp; User</div>
+              <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed mb-4">
+                Install Maestro directly to your personal Discord account as a User App! Once installed, access your full Italian flashcard deck, verb conjugators, grammar lookups, and MIT course lessons from any Discord server you visit or even inside direct messages.
+              </p>
+            </div>
+            <div class="p-2.5 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-200">
+              Setup: Click <strong>Add App</strong> &rarr; Install to Account
             </div>
           </div>
 
@@ -3281,12 +3717,720 @@
       document.getElementById('pronResultDesc').innerText = desc;
     }
 
+    // =========================================================================
+    // MIT OCW Italian Course (ES.S41) Interactive Syllabus Dataset & Engine
+    // =========================================================================
+    const MIT_LESSONS = [
+      {
+        id: 1,
+        title_it: "Lezione 1: Benvenuti in Cucina!",
+        title_en: "Lesson 1: Welcome to the Kitchen!",
+        cefr: "A1",
+        dish: "Bruschetta al Pomodoro",
+        time: "15 min",
+        region: "Lazio / Toscana",
+        objectives: [
+          "Master basic Italian phonetics (C & G sounds, GLI, GN, Z)",
+          "Greetings & introductions (Ciao, Buongiorno, Mi chiamo...)",
+          "Count from 1 to 10 in culinary settings",
+          "Prepare traditional Bruschetta al Pomodoro"
+        ],
+        grammar_title: "Fonetica Italiana & Verbo Essere",
+        grammar_desc: "Italian spelling is highly regular and phonetic. Vowels are always pure and never diphthongized. The verb 'essere' (to be) is irregular: io sono, tu sei, lui/lei è, noi siamo, voi siete, loro sono.",
+        vocab: [
+          { it: "la cucina", en: "the kitchen", phonetic: "koo-CHEE-nah" },
+          { it: "il pane", en: "the bread", phonetic: "PAH-neh" },
+          { it: "il pomodoro", en: "the tomato", phonetic: "poh-moh-DOH-roh" },
+          { it: "l'aglio", en: "the garlic", phonetic: "AH-lyoh" },
+          { it: "il basilico", en: "the basil", phonetic: "bah-ZEE-lee-koh" },
+          { it: "l'olio d'oliva", en: "the olive oil", phonetic: "OH-lyoh doh-LEE-vah" }
+        ],
+        dialogue: [
+          { speaker: "Chef", text: "Ciao a tutti! Benvenuti nella cucina italiana!" },
+          { speaker: "Studente", text: "Buongiorno Maestro! Cosa cuciniamo oggi?" },
+          { speaker: "Chef", text: "Oggi prepariamo una bruschetta classica con pomodoro fresco e basilico." }
+        ],
+        recipe: {
+          dish: "Bruschetta al Pomodoro Tradizionale",
+          ingredients: ["4 fette di pane casereccio", "4 pomodori maturi", "1 spicchio d'aglio", "Basilico fresco", "Olio EVO", "Sale marino"],
+          steps: "Tagliare i pomodori a cubetti e condire con olio, sale e basilico. Tostare il pane sulla griglia, strofinare leggermente lo spicchio d'aglio sulla superficie calda, e distribuire il pomodoro condito."
+        },
+        exam: {
+          q: "Come si pronuncia la combinazione 'GN' nella parola 'gnocchi'?",
+          opts: ["Come una 'g' dura seguita da 'n'", "Come il suono 'ny' di 'canyon' o 'onion'", "La 'g' è muta come in inglese 'gnat'"],
+          answer: 1,
+          explain: "In italiano, 'GN' rappresenta una consonante nasale palatale, identica al suono 'ny' di 'canyon'."
+        }
+      },
+      {
+        id: 2,
+        title_it: "Lezione 2: Al Mercato e i Numeri",
+        title_en: "Lesson 2: At the Market & Numbers",
+        cefr: "A1",
+        dish: "Insalata Caprese",
+        time: "10 min",
+        region: "Campania (Capri)",
+        objectives: [
+          "Definite and indefinite articles",
+          "Numbers 11-100 and market weights",
+          "Asking prices: Quanto costa?",
+          "Assemble authentic Insalata Caprese"
+        ],
+        grammar_title: "Articoli Determinativi (il, lo, la, i, gli, le)",
+        grammar_desc: "Masculine nouns take 'il' (pl. 'i') before single consonants; 'lo' (pl. 'gli') before s+consonant, z, gn, ps; 'l\'' before vowels. Feminine nouns take 'la' (pl. 'le'); 'l\'' before vowels.",
+        vocab: [
+          { it: "il mercato", en: "the open-air market", phonetic: "mehr-KAH-toh" },
+          { it: "la mozzarella", en: "fresh mozzarella", phonetic: "moht-tsah-REHL-lah" },
+          { it: "un etto", en: "100 grams", phonetic: "EHT-toh" },
+          { it: "un chilo", en: "one kilogram", phonetic: "KEE-loh" },
+          { it: "quanto costa?", en: "how much is it?", phonetic: "KWAHN-toh KOH-stah" },
+          { it: "il basilico", en: "basil leaves", phonetic: "bah-ZEE-lee-koh" }
+        ],
+        dialogue: [
+          { speaker: "Cliente", text: "Buongiorno, vorrei tre etti di mozzarella di bufala, per favore." },
+          { speaker: "Mercante", text: "Certamente! Ecco a Lei. Desidera altro?" },
+          { speaker: "Cliente", text: "Quanto costa al chilo?" }
+        ],
+        recipe: {
+          dish: "Insalata Caprese di Bufala",
+          ingredients: ["400g mozzarella di bufala", "4 pomodori cuore di bue", "Basilico", "Olio EVO", "Origano", "Sale"],
+          steps: "Affettare la mozzarella e i pomodori a fette spesse 1 cm. Alternare pomodoro e mozzarella a raggiera, guarnire con foglie di basilico, sale e un filo generoso di olio extravergine."
+        },
+        exam: {
+          q: "Quale articolo determinativo singolare richiede la parola 'zucchero'?",
+          opts: ["il zucchero", "lo zucchero", "l' zucchero"],
+          answer: 1,
+          explain: "I nomi maschili singolari che iniziano per 'z' richiedono l'articolo determinativo 'lo' (e plurale 'gli')."
+        }
+      },
+      {
+        id: 3,
+        title_it: "Lezione 3: La Pasta Perfetta e i Verbi Regolari",
+        title_en: "Lesson 3: Perfect Pasta & Regular Verbs",
+        cefr: "A1",
+        dish: "Spaghetti al Pomodoro e Basilico",
+        time: "20 min",
+        region: "Campania / Tutta Italia",
+        objectives: [
+          "Regular -are verbs (cucinare, saltare, scolare)",
+          "The golden rules of boiling pasta al dente",
+          "Expressing preferences with 'piacere'",
+          "Mastering pasta water salting ratio"
+        ],
+        grammar_title: "Coniugazione dei Verbi in -ARE",
+        grammar_desc: "Regular -are present endings: -o, -i, -a, -iamo, -ate, -ano. Cucinare: io cucino, tu cucini, lui cucina, noi cuciniamo, voi cucinate, loro cucinano.",
+        vocab: [
+          { it: "scolare", en: "to drain pasta", phonetic: "skoh-LAH-reh" },
+          { it: "al dente", en: "firm to the bite", phonetic: "ahl DEHN-teh" },
+          { it: "l'acqua bolle", en: "the water is boiling", phonetic: "AHK-wah BOHL-leh" },
+          { it: "mantecare", en: "to emulsify with sauce", phonetic: "mahn-teh-KAH-reh" },
+          { it: "la pentola", en: "the pot", phonetic: "PEHN-toh-lah" },
+          { it: "il sale grosso", en: "coarse salt", phonetic: "SAH-leh GROHS-soh" }
+        ],
+        dialogue: [
+          { speaker: "Cuoco", text: "L'acqua bolle! Aggiungi il sale grosso prima di buttare la pasta." },
+          { speaker: "Aiuto", text: "Quanti minuti devono cuocere gli spaghetti?" },
+          { speaker: "Cuoco", text: "Nove minuti esatti per una cottura perfetta al dente." }
+        ],
+        recipe: {
+          dish: "Spaghetti al Pomodoro e Basilico",
+          ingredients: ["320g spaghetti trafilati al bronzo", "500g pomodori pelati", "1 spicchio d'aglio", "Basilico fresco", "Olio EVO", "Sale grosso"],
+          steps: "Cuocere il sugo di pomodoro con aglio e olio a fuoco dolce per 15 minuti. Lessare gli spaghetti al dente in abbondante acqua salata e saltare direttamente nella padella col sugo."
+        },
+        exam: {
+          q: "Qual è la forma corretta per 'noi' del verbo 'cucinare' al presente?",
+          opts: ["cuciniamo", "cucinate", "cucinano"],
+          answer: 0,
+          explain: "La prima persona plurale (noi) dei verbi regolari in -are termina sempre in '-iamo': cuciniamo."
+        }
+      },
+      {
+        id: 4,
+        title_it: "Lezione 4: Al Ristorante e la Tavola",
+        title_en: "Lesson 4: At the Restaurant & The Table",
+        cefr: "A1",
+        dish: "Penne all'Arrabbiata",
+        time: "15 min",
+        region: "Lazio (Roma)",
+        objectives: [
+          "Verbs in -ere and -ire (prendere, offrire, servire)",
+          "Table settings & utensils",
+          "Polite requests: vorrei, mi porta...?",
+          "Make spicy Penne all'Arrabbiata"
+        ],
+        grammar_title: "Verbi in -ERE e -IRE & Il Condizionale di Cortesia",
+        grammar_desc: "Use 'Vorrei' (I would like) instead of 'Voglio' (I want) when ordering in Italian restaurants. Conjugate -ere (prendo, prendi, prende) and -ire (offro, offri, offre).",
+        vocab: [
+          { it: "il conto, per favore", en: "the bill, please", phonetic: "KOHNT-toh pehr fah-VOH-reh" },
+          { it: "la forchetta", en: "the fork", phonetic: "for-KEHT-tah" },
+          { it: "il peperoncino", en: "chili pepper", phonetic: "peh-peh-rohn-CHEE-noh" },
+          { it: "il coperto", en: "cover charge", phonetic: "koh-PEHR-toh" },
+          { it: "il coltello", en: "the knife", phonetic: "kohl-TEHL-loh" },
+          { it: "il tovagliolo", en: "the napkin", phonetic: "toh-vah-LYOH-loh" }
+        ],
+        dialogue: [
+          { speaker: "Cameriere", text: "Buonasera, siete pronti per ordinare?" },
+          { speaker: "Ospite", text: "Buonasera! Vorrei un piatto di penne all'arrabbiata e un bicchiere d'acqua." },
+          { speaker: "Cameriere", text: "Ottima scelta, gradisce un po' di pecorino grattugiato sopra?" }
+        ],
+        recipe: {
+          dish: "Penne all'Arrabbiata Tradizionali",
+          ingredients: ["320g penne rigate", "400g pomodori pelati", "2 spicchi d'aglio", "2 peperoncini rossi freschi", "Pecorino Romano DOP", "Olio EVO"],
+          steps: "Dorare l'aglio e il peperoncino nell'olio, unire i pomodori schiacciati e cuocere per 12 minuti. Scolare le penne al dente, saltare nella salsa piccante e completare con pecorino."
+        },
+        exam: {
+          q: "Qual è il modo più cortese per chiedere un bicchiere d'acqua?",
+          opts: ["Voglio un bicchiere d'acqua.", "Vorrei un bicchiere d'acqua, per favore.", "Dammi l'acqua subito."],
+          answer: 1,
+          explain: "'Vorrei' (condizionale di cortesia del verbo volere) è la formula elegante e naturale utilizzata in tutta Italia."
+        }
+      },
+      {
+        id: 5,
+        title_it: "Lezione 5: Colazione al Bar e il Tiramisù",
+        title_en: "Lesson 5: Bar Breakfast & Tiramisù",
+        cefr: "A2",
+        dish: "Tiramisù Tradizionale",
+        time: "30 min",
+        region: "Veneto (Treviso)",
+        objectives: [
+          "Coffee bar rituals and Italian types of coffee",
+          "Verbo Piacere with singular & plural nouns",
+          "Craft authentic Treviso Tiramisù"
+        ],
+        grammar_title: "Il Verbo Piacere (Mi piace / Mi piacciono)",
+        grammar_desc: "'Piacere' agrees with the thing that is pleasing! 'Mi piace il caffè' (singular noun) vs 'Mi piacciono i dolci' (plural noun).",
+        vocab: [
+          { it: "un caffè al banco", en: "an espresso at counter", phonetic: "ahl BAHN-koh" },
+          { it: "i savoiardi", en: "ladyfingers", phonetic: "sah-voy-AHR-dee" },
+          { it: "il mascarpone", en: "mascarpone cheese", phonetic: "mah-skahr-POH-neh" },
+          { it: "la moka", en: "espresso maker", phonetic: "MOH-kah" },
+          { it: "il cornetto", en: "Italian croissant", phonetic: "kor-NEHT-toh" },
+          { it: "il cacao", en: "cocoa powder", phonetic: "kah-KAH-oh" }
+        ],
+        dialogue: [
+          { speaker: "Barista", text: "Buongiorno! Il solito?" },
+          { speaker: "Cliente", text: "Buongiorno Marco! Sì, un espresso macchiato caldo e un cornetto semplice." },
+          { speaker: "Barista", text: "Subito al banco! E per dessert oggi abbiamo preparato il tiramisù fresco." }
+        ],
+        recipe: {
+          dish: "Tiramisù Tradizionale di Treviso",
+          ingredients: ["500g mascarpone", "4 uova fresche", "100g zucchero", "300g savoiardi", "300ml caffè espresso forte", "Cacao amaro"],
+          steps: "Montare i tuorli con lo zucchero, incorporare il mascarpone e gli albumi montati a neve. Inzuppare rapidamente i savoiardi nel caffè, alternare strati di crema e biscotti, e spolverare di cacao."
+        },
+        exam: {
+          q: "Completa la frase: 'A me _______ molto i dolci al cucchiaio.'",
+          opts: ["piace", "piacciono", "piaciamo"],
+          answer: 1,
+          explain: "Poiché il soggetto grammaticale è 'i dolci' (plurale), il verbo piacere deve concordare al plurale: 'piacciono'."
+        }
+      },
+      {
+        id: 6,
+        title_it: "Lezione 6: Pane, Focaccia e Lievitati",
+        title_en: "Lesson 6: Bread, Focaccia & Yeast",
+        cefr: "A2",
+        dish: "Focaccia Genovese Classica",
+        time: "45 min + lievitazione",
+        region: "Liguria (Genova)",
+        objectives: [
+          "L'imperativo informale in cucina (mescola, impasta, lascia)",
+          "Baking terminology & fermentation",
+          "Bake crisp Focaccia Genovese"
+        ],
+        grammar_title: "L'Imperativo Diretto per le Ricette (Tu / Voi)",
+        grammar_desc: "Informal recipe instructions use the 'tu' or 'voi' imperative. For -are verbs: impasta (tu), impastate (voi). For -ere/-ire: unisci, prendi, coprite.",
+        vocab: [
+          { it: "la farina", en: "flour", phonetic: "fah-REE-nah" },
+          { it: "il lievito", en: "yeast", phonetic: "LYEH-vee-toh" },
+          { it: "impastare", en: "to knead", phonetic: "eem-pah-STAH-reh" },
+          { it: "la lievitazione", en: "proofing / fermentation", phonetic: "lyeh-vee-tah-TSYOH-neh" },
+          { it: "la teglia", en: "baking pan", phonetic: "TEH-lyah" },
+          { it: "croccante", en: "crunchy", phonetic: "krohk-KAHN-teh" }
+        ],
+        dialogue: [
+          { speaker: "Fornaio", text: "Guarda l'impasto: deve essere morbido ed elastico." },
+          { speaker: "Apprendista", text: "Quanto tempo deve riposare prima di fare i buchi?" },
+          { speaker: "Fornaio", text: "Lascialo lievitare per due ore, poi premi forte con le dita e versa la salamoia d'olio e acqua." }
+        ],
+        recipe: {
+          dish: "Focaccia Genovese Classica (Fügassa)",
+          ingredients: ["500g farina Manitoba", "300ml acqua tiepida", "15g lievito di birra", "60ml olio EVO", "10g sale", "Salamoia di acqua e olio", "Sale grosso"],
+          steps: "Impastare e stendere nella teglia unta. Lasciare lievitare, creare le fossette con i polpastrelli, versare la salamoia di olio e acqua, cospargere di sale grosso e cuocere a 230°C."
+        },
+        exam: {
+          q: "Qual è la forma dell'imperativo informale (tu) del verbo 'mescolare'?",
+          opts: ["mescoli", "mescola", "mescolate"],
+          answer: 1,
+          explain: "Per i verbi in -are, la 2a persona singolare dell'imperativo informale (tu) termina in '-a': mescola!"
+        }
+      },
+      {
+        id: 7,
+        title_it: "Lezione 7: Risotti e Tradizioni del Nord",
+        title_en: "Lesson 7: Risottos & Northern Traditions",
+        cefr: "A2",
+        dish: "Risotto alla Milanese",
+        time: "30 min",
+        region: "Lombardia (Milano)",
+        objectives: [
+          "Partitive articles (del, dello, della, dei, delle)",
+          "Verbs of quantity and measurement",
+          "Prepare authentic saffron Risotto alla Milanese"
+        ],
+        grammar_title: "Gli Articoli Partitivi (del, dello, della, dei, degli, delle)",
+        grammar_desc: "Partitives express an unspecified quantity ('some'). 'Aggiungi del brodo' (add some broth). 'Compriamo delle cipolle' (let's buy some onions).",
+        vocab: [
+          { it: "lo zafferano", en: "saffron", phonetic: "tsahf-feh-RAH-noh" },
+          { it: "il brodo", en: "broth / stock", phonetic: "BROH-doh" },
+          { it: "il riso Carnaroli", en: "Carnaroli rice", phonetic: "kahr-nah-ROH-lee" },
+          { it: "all'onda", en: "creamy, wavy consistency", phonetic: "ahl-LOHN-dah" },
+          { it: "il burro", en: "butter", phonetic: "BOOR-roh" },
+          { it: "sfumare", en: "to deglaze with wine", phonetic: "sfoo-MAH-reh" }
+        ],
+        dialogue: [
+          { speaker: "Chef", text: "Tosta il riso a secco per due minuti prima di sfumare con del vino bianco." },
+          { speaker: "Studente", text: "Quando mettiamo lo zafferano?" },
+          { speaker: "Chef", text: "Scioglilo in un mestolo di brodo caldo e versalo a metà cottura." }
+        ],
+        recipe: {
+          dish: "Risotto alla Milanese con Zafferano",
+          ingredients: ["320g riso Carnaroli", "1 bustina zafferano", "1L brodo caldo", "1 scalogno", "80g burro freddo", "60g Parmigiano", "1/2 bicchiere vino bianco"],
+          steps: "Tostare il riso con poco burro, sfumare col vino bianco, aggiungere brodo caldo mestolo a mestolo. A metà cottura unire lo zafferano sciolto in brodo. A fuoco spento mantecare con burro ghiacciato e Parmigiano."
+        },
+        exam: {
+          q: "Quale articolo partitivo si usa con 'burro' (maschile singolare)?",
+          opts: ["della burro", "del burro", "dello burro"],
+          answer: 1,
+          explain: "Poiché 'burro' inizia per consonante singolare maschile (b-), richiede l'articolo partitivo 'del' (di + il)."
+        }
+      },
+      {
+        id: 8,
+        title_it: "Lezione 8: Gnocchi Fatti in Casa e il Passato Prossimo",
+        title_en: "Lesson 8: Homemade Gnocchi & Past Tense",
+        cefr: "A2",
+        dish: "Gnocchi di Patate al Pesto",
+        time: "45 min",
+        region: "Liguria & Campania",
+        objectives: [
+          "Il Passato Prossimo with avere vs essere",
+          "Past participle agreement rules",
+          "Shape potato gnocchi with a fork"
+        ],
+        grammar_title: "Il Passato Prossimo & Accordo del Participio Passato",
+        grammar_desc: "Auxiliary essere or avere + past participle. Verbs taking essere agree in gender and number: 'Siamo andati al mercato', 'Maria è arrivata'.",
+        vocab: [
+          { it: "lo schiacciapatate", en: "potato ricer", phonetic: "skyaht-chah-pah-TAH-teh" },
+          { it: "rigare gli gnocchi", en: "to ridge gnocchi", phonetic: "ree-GAH-reh" },
+          { it: "il mortaio", en: "mortar and pestle", phonetic: "mor-TAH-yoh" },
+          { it: "i pinoli", en: "pine nuts", phonetic: "pee-NOH-lee" },
+          { it: "galleggiare", en: "to float to the surface", phonetic: "gahl-lehd-JAH-reh" },
+          { it: "la purea", en: "mashed potatoes", phonetic: "poo-REH-ah" }
+        ],
+        dialogue: [
+          { speaker: "Nonna", text: "Ieri ho comprato delle patate a pasta gialla perfette per gli gnocchi." },
+          { speaker: "Nipote", text: "Le hai già lessate?" },
+          { speaker: "Nonna", text: "Sì, le ho cotte con la buccia e le ho pelate calde!" }
+        ],
+        recipe: {
+          dish: "Gnocchi di Patate al Pesto di Basilico",
+          ingredients: ["1kg patate a pasta gialla", "300g farina 00", "1 uovo piccolo", "Pesto genovese fresco", "Sale"],
+          steps: "Lessare le patate con la buccia, pelarle calde e schiacciarle. Unire farina, uovo e sale lavorando pochissimo. Formare cordoncini, tagliare a tocchetti e rigare sui rebbi di una forchetta. Cuocere finché non salgono a galla."
+        },
+        exam: {
+          q: "Quale frase presenta il corretto accordo del participio passato con essere?",
+          opts: ["Le ragazze sono arrivati tardi.", "Le ragazze sono arrivate tardi.", "Le ragazze hanno arrivato tardi."],
+          answer: 1,
+          explain: "Con l'ausiliare essere, il participio concorda in genere e numero col soggetto: 'Le ragazze' (femm. plur.) -> 'arrivate'."
+        }
+      },
+      {
+        id: 9,
+        title_it: "Lezione 9: Piatti della Domenica e Verbi Riflessivi",
+        title_en: "Lesson 9: Sunday Feasts & Reflexive Verbs",
+        cefr: "A2",
+        dish: "Melanzane alla Parmigiana",
+        time: "1h 15 min",
+        region: "Campania / Sicilia",
+        objectives: [
+          "Reflexive verbs in daily routines (svegliarsi, sedersi, incontrarsi)",
+          "Family Sunday dining culture",
+          "Bake classic Melanzane alla Parmigiana"
+        ],
+        grammar_title: "I Verbi Riflessivi & Reciproci",
+        grammar_desc: "Reflexive pronouns: mi, ti, si, ci, vi, si. 'La domenica la famiglia si riunisce' (On Sunday the family gathers). All reflexives use ESSERE in past tenses.",
+        vocab: [
+          { it: "le melanzane", en: "eggplants / aubergines", phonetic: "meh-lahn-DZAH-neh" },
+          { it: "spurgare col sale", en: "purge bitterness", phonetic: "spoor-GAH-reh" },
+          { it: "la domenica in famiglia", en: "Sunday with family", phonetic: "doh-MEH-nee-kah" },
+          { it: "gratinare", en: "to brown in the oven", phonetic: "grah-tee-NAH-reh" },
+          { it: "il fior di latte", en: "cow's milk mozzarella", phonetic: "FYOR dee LAHT-teh" },
+          { it: "la teglia", en: "casserole dish", phonetic: "TEH-lyah" }
+        ],
+        dialogue: [
+          { speaker: "Mamma", text: "La domenica ci alziamo presto per preparare il pranzo per tutti." },
+          { speaker: "Figlio", text: "A che ora si siedono a tavola i nonni?" },
+          { speaker: "Mamma", text: "Verso l'una, quando la parmigiana ha finito di gratinare in forno." }
+        ],
+        recipe: {
+          dish: "Melanzane alla Parmigiana Tradizionali",
+          ingredients: ["1.5kg melanzane", "800g passata pomodoro", "350g fior di latte sgocciolato", "100g Parmigiano", "Basilico", "Olio per friggere"],
+          steps: "Affettare le melanzane, spurgarle col sale, asciugarle e friggerle. In una teglia alternare strati di sugo al basilico, melanzane fritte, fior di latte e Parmigiano. Cuocere in forno a 200°C per 35 minuti."
+        },
+        exam: {
+          q: "Quale pronome riflessivo si usa per la prima persona plurale 'noi'?",
+          opts: ["si", "ci", "vi"],
+          answer: 1,
+          explain: "Il pronome riflessivo per 'noi' è 'ci': 'Noi ci sediamo a tavola'."
+        }
+      },
+      {
+        id: 10,
+        title_it: "Lezione 10: Street Food e Sapori Regionali",
+        title_en: "Lesson 10: Street Food & Regional Flavors",
+        cefr: "B1",
+        dish: "Arancini di Riso Siciliani",
+        time: "1h",
+        region: "Sicilia (Palermo / Catania)",
+        objectives: [
+          "Direct and indirect object pronouns (lo, la, gli, le)",
+          "Regional Italian dialects & street food terminology",
+          "Craft crispy Sicilian Arancini"
+        ],
+        grammar_title: "I Pronomi Diretti e Indiretti",
+        grammar_desc: "Direct (lo, la, li, le) answer 'who / what?'. Indirect (mi, ti, gli, le, ci, vi, loro) answer 'to whom?'. 'Li mangiamo caldi' (we eat them warm).",
+        vocab: [
+          { it: "l'arancino / l'arancina", en: "fried rice ball", phonetic: "ah-rahn-CHEE-noh" },
+          { it: "la panatura", en: "breading / crust", phonetic: "pah-nah-TOO-rah" },
+          { it: "croccante", en: "crispy / crunchy", phonetic: "krohk-KAHN-teh" },
+          { it: "il cibo di strada", en: "street food", phonetic: "CHEE-boh dee STRAH-dah" },
+          { it: "il caciocavallo", en: "caciocavallo cheese", phonetic: "kah-choh-kah-VAHL-loh" },
+          { it: "la friggitoria", en: "fried food shop", phonetic: "freed-jee-toh-REE-ah" }
+        ],
+        dialogue: [
+          { speaker: "Turista", text: "Si dice arancino o arancina?" },
+          { speaker: "Palermitano", text: "A Palermo lo chiamiamo arancina, rotonda come un'arancia!" },
+          { speaker: "Catanese", text: "E a Catania lo chiamiamo arancino, a forma di cono come l'Etna!" }
+        ],
+        recipe: {
+          dish: "Arancini Siciliani al Ragù e Piselli",
+          ingredients: ["500g riso", "1 bustina zafferano", "30g burro", "150g ragù con piselli", "100g caciocavallo", "Pastella di farina e acqua", "Pangrattato", "Olio per friggere"],
+          steps: "Cuocere il riso, mantecare con burro e zafferano e farlo raffreddare. Prelevare una porzione di riso, formare una conca, inserire il ragù e il formaggio, richiudere e compattare a cono. Passare nella pastella, nel pangrattato e friggere a 175°C."
+        },
+        exam: {
+          q: "Quale pronome diretto sostituisce 'gli arancini' nella frase 'Mangio gli arancini'?",
+          opts: ["Li mangio.", "Gli mangio.", "Lo mangio."],
+          answer: 0,
+          explain: "'Gli arancini' è maschile plurale, quindi si sostituisce con il pronome diretto 'li': 'Li mangio'."
+        }
+      },
+      {
+        id: 11,
+        title_it: "Lezione 11: Il Vino e l'Arte dell'Aperitivo",
+        title_en: "Lesson 11: Wine & The Art of Aperitivo",
+        cefr: "B1",
+        dish: "Aperitivo con Crostini Toscani",
+        time: "30 min",
+        region: "Toscana & Veneto",
+        objectives: [
+          "Relative pronouns (che, cui, il quale)",
+          "Wine appreciation vocabulary (corposo, secco, tannico)",
+          "Prepare Tuscan Chicken Liver Crostini"
+        ],
+        grammar_title: "I Pronomi Relativi (Che vs Cui)",
+        grammar_desc: "'Che' is invariable for subject and direct object: 'Il vino che abbiamo bevuto'. 'Cui' is used after prepositions: 'L'amico con cui ho brindato'.",
+        vocab: [
+          { it: "fare un brindisi", en: "to make a toast", phonetic: "BREEN-dee-zee" },
+          { it: "alla salute!", en: "to your health / cheers!", phonetic: "ahl-lah sah-LOO-teh" },
+          { it: "secco", en: "dry (wine)", phonetic: "SEHK-koh" },
+          { it: "i fegatini", en: "chicken livers", phonetic: "feh-gah-TEE-nee" },
+          { it: "la cantina", en: "wine cellar / winery", phonetic: "kahn-TEE-nah" },
+          { it: "l'annata", en: "vintage year", phonetic: "ahn-NAH-tah" }
+        ],
+        dialogue: [
+          { speaker: "Sommelier", text: "Questo è un Chianti Classico che ha riposato due anni in botte di rovere." },
+          { speaker: "Ospite", text: "Ha un profumo straordinario. Con cosa lo abbiniamo?" },
+          { speaker: "Sommelier", text: "Con questi crostini toscani caldi, di cui apprezzerà la cremosità." }
+        ],
+        recipe: {
+          dish: "Crostini Neri Toscani Tradizionali",
+          ingredients: ["300g fegatini di pollo", "1 cipolla rossa", "30g capperi dissalati", "3 filetti d'acciuga", "50ml Vin Santo secco", "Brodo", "Pane toscano"],
+          steps: "Soffriggere la cipolla, unire i fegatini e rosolare. Sfumare col Vin Santo, cuocere 20 minuti con brodo. Frullare grossolanamente con capperi e acciughe, e spalmare sul pane toscano bagnato leggermente nel brodo."
+        },
+        exam: {
+          q: "Quale pronome relativo si usa dopo una preposizione (es: 'Il locale in _____ andiamo')?",
+          opts: ["che", "cui", "quale"],
+          answer: 1,
+          explain: "Dopo le preposizioni semplici (in, con, di, a, da, per, su) si usa sempre 'cui': 'Il locale in cui andiamo'."
+        }
+      },
+      {
+        id: 12,
+        title_it: "Lezione 12: Dolci e Tradizioni delle Feste",
+        title_en: "Lesson 12: Festive Sweets & Holiday Traditions",
+        cefr: "B1",
+        dish: "Cantucci Toscani di Prato",
+        time: "40 min",
+        region: "Toscana (Prato)",
+        objectives: [
+          "L'imperfetto vs Il Passato Prossimo in storytelling",
+          "Italian holiday traditions (Natale, Pasqua, Ferragosto)",
+          "Bake almond Cantucci with Vin Santo"
+        ],
+        grammar_title: "Imperfetto vs Passato Prossimo nella Narrazione",
+        grammar_desc: "Use IMPERFETTO for ongoing descriptions, background conditions, and repeated habits in the past ('Da bambino andavo in Toscana'). Use PASSATO PROSSIMO for completed, single events ('Ieri ho sfornato i biscotti').",
+        vocab: [
+          { it: "le mandorle", en: "almonds", phonetic: "MAHN-dohr-leh" },
+          { it: "inzuppare", en: "to dunk into liquid", phonetic: "een-tsoop-PAH-reh" },
+          { it: "il Vin Santo", en: "holy dessert wine", phonetic: "VEEN SAHN-toh" },
+          { it: "la tradizione", en: "tradition", phonetic: "trah-dee-TSYOH-neh" },
+          { it: "bis-cotto", en: "twice-baked", phonetic: "bees-KOHT-toh" },
+          { it: "croccante", en: "crunchy", phonetic: "krohk-KAHN-teh" }
+        ],
+        dialogue: [
+          { speaker: "Nonna", text: "Quando ero giovane, preparavamo i cantucci per tutte le grandi feste natalizie." },
+          { speaker: "Nipote", text: "Perché si cuociono due volte?" },
+          { speaker: "Nonna", text: "Per renderli duri e croccanti, perfetti per essere inzuppati nel Vin Santo!" }
+        ],
+        recipe: {
+          dish: "Cantucci di Prato alle Mandorle",
+          ingredients: ["300g farina 00", "200g zucchero", "150g mandorle intere", "2 uova intere + 1 tuorlo", "Scorza di 1 arancia", "Sale e mezzo cucchiaino lievito"],
+          steps: "Tostare le mandorle 5 minuti. Lavorare uova e zucchero, unire farina, lievito e le mandorle intere. Formare due filoni, spennellare con tuorlo e cuocere 20 min a 180°C. Tagliare a fette oblique ancora caldi e reinfornare per 8 minuti per tostarli."
+        },
+        exam: {
+          q: "Completa la frase di abitudine passata: 'Da piccolo mia nonna _______ sempre i biscotti la domenica.'",
+          opts: ["ha fatto", "faceva", "fece"],
+          answer: 1,
+          explain: "Per azioni abituali e ripetute nel passato ('sempre la domenica') si usa l'imperfetto: 'faceva'."
+        }
+      },
+      {
+        id: 13,
+        title_it: "Lezione 13: Il Pranzo di Laurea e il Banchetto Finale",
+        title_en: "Lesson 13: Graduation Feast & Final Banquet",
+        cefr: "B1",
+        dish: "Tagliatelle al Ragù Bolognese",
+        time: "2h 30 min",
+        region: "Emilia-Romagna (Bologna)",
+        objectives: [
+          "Il Congiuntivo Presente (spero che, credo che, è bello che)",
+          "Rolling fresh egg pasta sfoglia by hand",
+          "Passing the MIT Graduation Exam & Diploma"
+        ],
+        grammar_title: "Introduzione al Congiuntivo Presente & Traguardo Finale",
+        grammar_desc: "The subjunctive expresses hope, wishes, feelings, and opinion. 'Spero che questo corso vi sia piaciuto!' (I hope that you enjoyed this course!). Endings: -i, -i, -i, -iamo, -iate, -ino.",
+        vocab: [
+          { it: "la sfoglia", en: "sheet of hand-rolled pasta", phonetic: "SFOH-lyah" },
+          { it: "il mattarello", en: "rolling pin", phonetic: "maht-tah-REHL-loh" },
+          { it: "il ragù", en: "slow-simmered meat sauce", phonetic: "rah-GOO" },
+          { it: "la laurea", en: "university degree / graduation", phonetic: "LAH-oo-reh-ah" },
+          { it: "il brindisi", en: "the celebration toast", phonetic: "BREEN-dee-zee" },
+          { it: "tirare la pasta", en: "to roll out pasta dough", phonetic: "tee-RAH-reh" }
+        ],
+        dialogue: [
+          { speaker: "Professore", text: "Congratulazioni a tutti! Oggi celebriamo la vostra laurea linguistica e culinaria!" },
+          { speaker: "Studenti", text: "Grazie di cuore professore! Abbiamo imparato la grammatica cucinando!" },
+          { speaker: "Professore", text: "Brindiamo insieme con un piatto fumante di tagliatelle fatte a mano!" }
+        ],
+        recipe: {
+          dish: "Tagliatelle al Ragù Bolognese Tradizionale",
+          ingredients: ["400g farina 00 + 4 uova fresche (per la sfoglia)", "400g polpa di manzo macinata", "150g pancetta di maiale", "Cipolla, sedano e carota", "50g concentrato pomodoro", "1/2 bicchiere vino bianco", "1 bicchiere latte caldo", "Brodo, burro, sale e pepe"],
+          steps: "Tirare la sfoglia sottile col mattarello e arrotolare per ricavare tagliatelle larghe 7 mm. Rosolare la pancetta, aggiungere verdure e carne, sfumare con vino bianco, incorporare il pomodoro e cuocere a fuoco lentissimo per 2 ore unendo il latte a fine cottura. Lessare le tagliatelle 2 minuti e mantecare."
+        },
+        exam: {
+          q: "Quale congiunzione richiede obbligatoriamente il congiuntivo presente?",
+          opts: ["Spero che...", "So che...", "È evidente che..."],
+          answer: 0,
+          explain: "'Sperare che' esprime un desiderio/speranza emotiva e richiede sempre il modo congiuntivo: 'Spero che tu sia felice'."
+        }
+      }
+    ];
+
+    let currentMitLessonId = 1;
+
+    function renderCoursePills() {
+      const container = document.getElementById('coursePillContainer');
+      if (!container) return;
+      container.innerHTML = MIT_LESSONS.map(l => {
+        const isActive = l.id === currentMitLessonId;
+        const activeClass = isActive 
+          ? "bg-olive text-white border-olive font-bold shadow-sm" 
+          : "bg-parchment-100 dark:bg-espresso-900 text-parchment-800 dark:text-parchment-300 border-parchment-300 dark:border-espresso-700 hover:border-olive";
+        return `
+          <button onclick="selectCourseLesson(${l.id})" class="px-3.5 py-2 rounded-xl border text-xs whitespace-nowrap transition-all flex items-center gap-2 ${activeClass}">
+            <span class="w-5 h-5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-olive/15 text-olive dark:text-olive-light'} text-[10px] font-mono font-bold flex items-center justify-center">${l.id}</span>
+            <span>${l.title_it.split(':')[0]}</span>
+            <span class="text-[9px] font-mono px-1 py-0.2 rounded bg-black/10 dark:bg-white/10 uppercase">${l.cefr}</span>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectCourseLesson(id) {
+      currentMitLessonId = id;
+      renderCoursePills();
+      renderCourseLesson(id);
+    }
+
+    function renderCourseLesson(id) {
+      const display = document.getElementById('courseLessonDisplay');
+      if (!display) return;
+      const l = MIT_LESSONS.find(item => item.id === id) || MIT_LESSONS[0];
+
+      display.innerHTML = `
+        <!-- Left Column: Pedagogical Content (7 Cols) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Module Title & Badges -->
+          <div>
+            <div class="flex items-center space-x-2 mb-2">
+              <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-olive/15 text-olive dark:text-olive-light uppercase">Module ${l.id} of 13</span>
+              <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-amalfi/15 text-amalfi dark:text-amalfi-light uppercase">CEFR ${l.cefr}</span>
+              <span class="px-2 py-0.5 rounded font-mono text-[10px] font-bold bg-ochre/15 text-ochre dark:text-ochre-light uppercase">${l.region}</span>
+            </div>
+            <h3 class="text-2xl font-editorial font-bold text-parchment-900 dark:text-parchment-50">${l.title_it}</h3>
+            <p class="text-xs font-medium text-parchment-800 dark:text-parchment-300 mt-0.5">${l.title_en}</p>
+          </div>
+
+          <!-- Featured Recipe Banner -->
+          <div class="p-4 rounded-2xl bg-terracotta/10 border border-terracotta/25 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+              <span class="text-2xl">🍝</span>
+              <div>
+                <div class="text-[10px] font-mono font-bold uppercase tracking-wider text-terracotta dark:text-terracotta-light">Culinary Highlight</div>
+                <div class="text-sm font-editorial font-bold text-parchment-900 dark:text-parchment-100">${l.dish}</div>
+              </div>
+            </div>
+            <span class="text-xs font-mono font-semibold px-2 py-1 rounded-lg bg-terracotta/15 text-terracotta dark:text-terracotta-light">⏱️ ${l.time}</span>
+          </div>
+
+          <!-- Learning Objectives -->
+          <div class="p-5 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+            <h4 class="font-editorial text-sm font-bold text-parchment-900 dark:text-parchment-100 mb-3 flex items-center gap-2">
+              <span>🎯</span> Learning Objectives
+            </h4>
+            <ul class="space-y-1.5 text-xs text-parchment-800 dark:text-parchment-300">
+              ${l.objectives.map(obj => `<li class="flex items-start gap-2"><span class="text-olive font-bold">✓</span> <span>${obj}</span></li>`).join('')}
+            </ul>
+          </div>
+
+          <!-- Grammar Breakdown Card -->
+          <div class="p-5 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+            <div class="flex items-center justify-between mb-2">
+              <h4 class="font-editorial text-sm font-bold text-parchment-900 dark:text-parchment-100 flex items-center gap-2">
+                <span>📘</span> ${l.grammar_title}
+              </h4>
+              <span class="text-[10px] font-mono text-olive dark:text-olive-light uppercase font-bold">Rule Codex</span>
+            </div>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">${l.grammar_desc}</p>
+          </div>
+
+          <!-- Vocabulary Pills -->
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-parchment-800 dark:text-parchment-300">Core Culinary Lexicon:</span>
+              <span class="text-[11px] font-mono text-terracotta dark:text-terracotta-light">1-Click Anki Import</span>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              ${l.vocab.map(v => `
+                <div class="p-3 rounded-xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+                  <div class="font-bold text-xs text-parchment-900 dark:text-parchment-100 font-mono">${v.it}</div>
+                  <div class="text-[11px] text-parchment-800 dark:text-parchment-300">${v.en}</div>
+                  <div class="text-[9px] font-mono text-olive dark:text-olive-light mt-1">/${v.phonetic}/</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Exit Exam & Discord Bot Preview (5 Cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <!-- Exit Exam Interactive Simulator -->
+          <div class="p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-ochre dark:text-ochre-light flex items-center gap-1.5">
+                <span>📝</span> Exit Exam Challenge
+              </span>
+              <span class="px-2 py-0.5 rounded bg-ochre/15 text-ochre dark:text-ochre-light text-[10px] font-mono font-bold">Pass: 3/4</span>
+            </div>
+            <p class="text-xs font-medium text-parchment-900 dark:text-parchment-100 mb-4 leading-relaxed">${l.exam.q}</p>
+            
+            <div class="space-y-2" id="examOptions">
+              ${l.exam.opts.map((opt, idx) => `
+                <button onclick="checkMitExamAnswer(${idx}, ${l.exam.answer}, '${l.exam.explain.replace(/'/g, "\\'")}')" class="w-full text-left p-3 rounded-xl border border-parchment-300 dark:border-espresso-700 bg-parchment-50 dark:bg-espresso-950 hover:border-olive text-xs text-parchment-900 dark:text-parchment-200 transition-all font-mono exam-opt-btn flex items-center justify-between">
+                  <span>${opt}</span>
+                  <span class="text-xs text-parchment-400 font-mono">[${String.fromCharCode(65 + idx)}]</span>
+                </button>
+              `).join('')}
+            </div>
+            <div id="examFeedback" class="mt-4 hidden p-3 rounded-xl text-xs font-mono"></div>
+          </div>
+
+          <!-- Dialogue Snippet Card -->
+          <div class="p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-mono font-bold uppercase tracking-wider text-amalfi dark:text-amalfi-light flex items-center gap-1.5">
+                <span>💬</span> Authentic Dialogue
+              </span>
+              <span class="text-[10px] font-mono text-parchment-800 dark:text-parchment-300">Live Practice</span>
+            </div>
+            <div class="space-y-2.5 text-xs">
+              ${l.dialogue.map(d => `
+                <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800">
+                  <span class="font-bold text-amalfi dark:text-amalfi-light font-mono">${d.speaker}:</span>
+                  <span class="text-parchment-900 dark:text-parchment-100"> "${d.text}"</span>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <!-- Recipe Preparation Summary -->
+          <div class="p-5 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800">
+            <h4 class="font-editorial text-xs font-bold uppercase tracking-wider text-terracotta dark:text-terracotta-light mb-2 flex items-center gap-1.5">
+              <span>👨‍🍳</span> Recipe Preparation Preview
+            </h4>
+            <p class="text-xs text-parchment-800 dark:text-parchment-300 leading-relaxed">${l.recipe.steps}</p>
+          </div>
+
+          <!-- Discord Action Buttons -->
+          <div class="p-4 rounded-2xl bg-olive/10 border border-olive/25 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="text-xs text-parchment-800 dark:text-parchment-200 font-mono">
+              Ready to learn on Discord?
+            </div>
+            <a href="#commands" class="w-full sm:w-auto px-4 py-2 rounded-xl bg-olive text-white text-xs font-bold font-mono text-center hover:bg-olive-light transition-colors shadow-xs">
+              /course lesson ${l.id}
+            </a>
+          </div>
+
+        </div>
+      `;
+    }
+
+    function checkMitExamAnswer(selected, correct, explain) {
+      const feedback = document.getElementById('examFeedback');
+      if (!feedback) return;
+      feedback.classList.remove('hidden', 'bg-olive/15', 'text-olive', 'dark:text-olive-light', 'bg-terracotta/15', 'text-terracotta', 'dark:text-terracotta-light', 'border-olive/30', 'border-terracotta/30');
+      feedback.classList.add('border');
+      if (selected === correct) {
+        feedback.classList.add('bg-olive/15', 'text-olive', 'dark:text-olive-light', 'border-olive/30');
+        feedback.innerHTML = `<strong>Corretto! (+50 XP)</strong><br>${explain}`;
+      } else {
+        feedback.classList.add('bg-terracotta/15', 'text-terracotta', 'dark:text-terracotta-light', 'border-terracotta/30');
+        feedback.innerHTML = `<strong>Non corretto.</strong><br>${explain}`;
+      }
+    }
+
     // Auto-initialize when DOM is ready
     window.addEventListener('load', () => {
       renderCrucipuzzle();
       runAlteratiDemo();
       runSubjDemo();
       runPronomiDemo();
+      renderCoursePills();
+      renderCourseLesson(1);
     });
   </script>
 </body>
