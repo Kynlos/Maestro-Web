@@ -1383,7 +1383,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course lesson reader overview vocabulary grammar dialogue recipe mit ocw">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course lesson &lt;numero&gt;</span>
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course lesson &lt;lesson_number&gt;</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Interactive Reader</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1399,7 +1399,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course exam test quiz graduation exit exam passing score xp mit ocw">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course exam &lt;numero&gt;</span>
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course exam &lt;lesson_number&gt;</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Exit Exam</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1415,7 +1415,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="course" data-keywords="course deck flashcards srs sm2 import vocabulary mit ocw">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course deck &lt;numero&gt;</span>
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/course deck &lt;lesson_number&gt;</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">SRS Sync</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1499,7 +1499,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="verb" data-keywords="verbo coniuga verb verbs conjugation tense mood indicative subjunctive reflexive shortcut coniuga">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/verb conjugate &lt;verbo&gt;</span>
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/verb conjugate &lt;verb&gt;</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Verbs</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1572,7 +1572,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-olive transition-all flex flex-col justify-between" data-category="verb" data-keywords="verbo drill conjugation training reflex practice tempo livello">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/verb drill [tempo]</span>
+              <span class="font-mono text-olive dark:text-olive-light font-bold text-sm">/verb drill [mode] [verb]</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-olive/10 text-olive dark:text-olive-light border border-olive/20 font-mono">Reflex Drill</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1580,7 +1580,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-olive dark:text-olive-light">/verb drill tempo:passato_prossimo level:B1</span>
+            Example: <span class="text-olive dark:text-olive-light">/verb drill mode:quiz verb:parlare</span>
           </div>
         </div>
 
@@ -1665,7 +1665,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-amalfi dark:text-amalfi-light">/deck add italiano:tramonto inglese:sunset parte:noun</span>
+            Example: <span class="text-amalfi dark:text-amalfi-light">/deck add (Opens modal to enter word, translation &amp; notes)</span>
           </div>
         </div>
 
@@ -1673,7 +1673,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="deck" data-keywords="deck lista list browse custom cards cards inspect">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/deck list [limite]</span>
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/deck list</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Browse Deck</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1681,7 +1681,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-amalfi dark:text-amalfi-light">/deck list limite:25</span>
+            Paginated card viewer with interactive buttons
           </div>
         </div>
 
@@ -1689,7 +1689,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="deck" data-keywords="deck importa esporta anki csv tsv bulk upload download backup bridge shortcut deck-import deck-export">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/deck import &amp; esporta</span>
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/deck import &amp; export</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Anki Bridge</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1837,7 +1837,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-ochre transition-all flex flex-col justify-between" data-category="grammar" data-keywords="grammatica preposizioni tabella articulated prepositions matrix grid di a da in su con per tra fra shortcut preposizioni preposizioni-tabella">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/grammar prepositions &amp; tabella</span>
+              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/grammar prepositions &amp; table</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Prepositions</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1853,7 +1853,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-ochre transition-all flex flex-col justify-between" data-category="grammar" data-keywords="grammatica completa registro pronomi consiglio dare del lei formal qual e un po mnemonics shortcut dare-del-lei sfida-pronomi consiglio-grammaticale sfida-grammatica">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/grammar pronouns &amp; registro</span>
+              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/grammar pronouns &amp; register</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Syntax Tools</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -1975,7 +1975,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-terracotta transition-all flex flex-col justify-between" data-category="quiz" data-keywords="quiz classico cefr multiple choice trivia beginner intermediate advanced shortcut trivia">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/quiz trivia [difficolta]</span>
+              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/quiz trivia [topic]</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-terracotta/10 text-terracotta dark:text-terracotta-light border border-terracotta/20 font-mono">CEFR Quiz</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2048,7 +2048,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-ochre transition-all flex flex-col justify-between" data-category="quiz" data-keywords="quiz modi falsiamici orario clock idioms false friends deception time shortcut quiz-modi quiz-falsiamici quiz-orario">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/quiz idioms &amp; falsiamici</span>
+              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/quiz idioms &amp; false-friends</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Idioms &amp; Traps</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2066,7 +2066,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-amalfi transition-all flex flex-col justify-between" data-category="vocab" data-keywords="vocab sfoglia dizionario dictionary search browse words cefr definition shortcut dizionario">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/vocab browse [cerca]</span>
+              <span class="font-mono text-amalfi dark:text-amalfi-light font-bold text-sm">/vocab browse [level] [category]</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Dictionary</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2074,7 +2074,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-amalfi dark:text-amalfi-light">/vocab browse cerca:mare level:A2</span>
+            Example: <span class="text-amalfi dark:text-amalfi-light">/vocab browse level:A2 category:food</span>
           </div>
         </div>
 
@@ -2143,7 +2143,7 @@
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Linguistics</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
-              Featured daily word with etymology, context sentence, and CEFR level. Also includes <code>/vocab syllables &lt;parola&gt;</code>: deterministic rule-based syllable splitter classifying stress as <span class="it-word">piana<span class="tip-box">Stress on penultimate syllable</span></span>, <span class="it-word">tronca<span class="tip-box">Stress on final vowel</span></span>, or <span class="it-word">sdrucciola<span class="tip-box">Stress on antepenultimate syllable</span></span>.
+              Featured daily word with etymology, context sentence, and CEFR level. Also includes <code>/vocab syllables &lt;word&gt;</code>: deterministic rule-based syllable splitter classifying stress as <span class="it-word">piana<span class="tip-box">Stress on penultimate syllable</span></span>, <span class="it-word">tronca<span class="tip-box">Stress on final vowel</span></span>, or <span class="it-word">sdrucciola<span class="tip-box">Stress on antepenultimate syllable</span></span>.
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
@@ -2155,7 +2155,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-ochre transition-all flex flex-col justify-between" data-category="vocab" data-keywords="vocab plurali alterati irregular plurals suffixes diminutive augmentative pejorative endearment morphology shortcut plurali alterati">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/vocab plurals &amp; alterati</span>
+              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/vocab plurals &amp; alterations</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Morphology</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2175,7 +2175,7 @@
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-amalfi/10 text-amalfi dark:text-amalfi-light border border-amalfi/20 font-mono">Culture &amp; Stories</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
-              Authentic cultural immersion: <code>/story [livello]</code> (graded micro-stories with bilingual glossaries &amp; reading comprehension tests), <code>/vocab dialect</code> (regional expressions from Romanesco to Venetian), and <code>/vocab proverb</code> (timeless Italian proverbs).
+              Authentic cultural immersion: <code>/story [level]</code> (graded micro-stories with bilingual glossaries &amp; reading comprehension tests), <code>/vocab dialect</code> (regional expressions from Romanesco to Venetian), and <code>/vocab proverb</code> (timeless Italian proverbs).
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
@@ -2190,7 +2190,7 @@
           <div>
             <div class="flex items-center justify-between mb-2.5">
               <div class="flex items-center space-x-1.5">
-                <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/notes search &lt;termine&gt;</span>
+                <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/notes search &lt;query&gt;</span>
                 <span class="px-1.5 py-0.5 text-[9px] uppercase font-bold rounded bg-terracotta/20 text-terracotta dark:text-terracotta-light border border-terracotta/30 font-mono">New</span>
               </div>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Search Notes</span>
@@ -2200,7 +2200,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-ochre dark:text-ochre-light">/notes search termine:congiuntivo</span>
+            Example: <span class="text-ochre dark:text-ochre-light">/notes search query:congiuntivo</span>
           </div>
         </div>
 
@@ -2208,7 +2208,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-ochre transition-all flex flex-col justify-between" data-category="student" data-keywords="appunti sfoglia salva elimina notebook notes quaderno study reminders rules shortcut quaderno appunti-salva appunti-elimina">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/notes browse &amp; salva</span>
+              <span class="font-mono text-ochre dark:text-ochre-light font-bold text-sm">/notes browse &amp; save</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-ochre/10 text-ochre dark:text-ochre-light border border-ochre/20 font-mono">Pocket Notebook</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2243,7 +2243,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-terracotta transition-all flex flex-col justify-between" data-category="student" data-keywords="studente scheda profile stats xp cefr level streak flashcards cards review shortcut profilo">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/student profile [@utente]</span>
+              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/student profile [@user]</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-terracotta/10 text-terracotta dark:text-terracotta-light border border-terracotta/20 font-mono">Learner Card</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2251,7 +2251,7 @@
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
-            Example: <span class="text-terracotta dark:text-terracotta-light">/student profile user:@Studente</span>
+            Example: <span class="text-terracotta dark:text-terracotta-light">/student profile user:@Student</span>
           </div>
         </div>
 
@@ -2275,7 +2275,7 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-terracotta transition-all flex flex-col justify-between" data-category="student" data-keywords="studente classifica badge leaderboard trophies achievements ranking rewards shortcut classifica badge">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/student leaderboard &amp; badge</span>
+              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/student leaderboard &amp; badges</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-terracotta/10 text-terracotta dark:text-terracotta-light border border-terracotta/20 font-mono">Leaderboard</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
@@ -2293,11 +2293,11 @@
         <div class="cmd-card p-6 rounded-2xl bg-parchment-100 dark:bg-espresso-900 border border-parchment-200 dark:border-espresso-800 hover:border-terracotta transition-all flex flex-col justify-between" data-category="config" data-keywords="config imposta ruoli auto-role channel notifications server setup admin settings shortcut impostazioni config-ruoli">
           <div>
             <div class="flex items-center justify-between mb-2.5">
-              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/config channel &amp; ruoli</span>
+              <span class="font-mono text-terracotta dark:text-terracotta-light font-bold text-sm">/config channel &amp; roles</span>
               <span class="px-2 py-0.5 text-[10px] uppercase font-bold rounded bg-terracotta/10 text-terracotta dark:text-terracotta-light border border-terracotta/20 font-mono">Server Admin</span>
             </div>
             <p class="text-xs text-parchment-800 dark:text-parchment-200 leading-relaxed mb-4">
-              Server management tools: configure the daily Word of the Day channel and delivery time with <code>/config channel</code>, or set up automated CEFR progression roles with <code>/config level-roles-set &lt;livello&gt; &lt;ruolo&gt;</code> to reward active server learners.
+              Server management tools: configure the daily Word of the Day channel and delivery time with <code>/config channel</code>, or set up automated CEFR progression roles with <code>/config level-roles-set &lt;level&gt; &lt;role&gt;</code> to reward active server learners.
             </p>
           </div>
           <div class="p-2.5 rounded-xl bg-parchment-50 dark:bg-espresso-950 border border-parchment-200 dark:border-espresso-800 text-[11px] font-mono text-parchment-800 dark:text-parchment-300">
